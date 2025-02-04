@@ -172,7 +172,7 @@ layers:
   - '&steno_ef'
   - '&steno_fe'
   - '&steno_af'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&steno_ing'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
@@ -186,7 +186,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&steno_lf'
   - '&steno_ck'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&steno_ion'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -214,15 +214,15 @@ layers:
   - '&lazy_s'
   - '&lazy_nt'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&lazy_exe'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '@'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '1'
+  - {t: '0', s: )}
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -234,7 +234,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&lazy_ll'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&lazy_like'
   - {t: '$$mdi:transfer$$', type: trans}
   - '&lazy_ve'
   - {t: '$$mdi:transfer$$', type: trans}
@@ -242,5 +242,5 @@ layers:
   - '&lazy_cmm'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '3', s: '#'}
   - {t: '$$mdi:transfer$$', type: trans}
