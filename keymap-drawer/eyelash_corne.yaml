@@ -42,7 +42,7 @@ layers:
   - '&key_repeat'
   - V
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:keyboard-esc$$', h: F4}
   - {t: '$$mdi:keyboard-space$$', h: nav+hot}
   - {t: steno, h: '$$mdi:gesture-tap-hold$$'}
   - {t: steno, h: '$$mdi:gesture-tap-hold$$'}
@@ -198,8 +198,8 @@ layers:
   lazy:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '&mcro_ad', h: '&mcro_sad'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&mcro_na'
+  - '&mcro_2025'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
