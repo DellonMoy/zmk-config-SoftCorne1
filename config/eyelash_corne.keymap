@@ -249,11 +249,18 @@
             label = "STENO_ION";
         };
 
-        steno_ence: steno_ence {
+        lazy_like: lazy_like {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp E &kp N &kp C &kp E>;
-            label = "STENO_ENCE";
+            bindings = <&kp L &kp I &kp K &kp E>;
+            label = "LAZY_LIKE";
+        };
+
+        lazy_exe: lazy_exe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp E &kp X &kp E>;
+            label = "LAZY_EXE";
         };
     };
 
@@ -293,19 +300,19 @@
 
         steno {
             bindings = <
-&trans      &steno_br  &trans  &trans  &trans             &trans                    &trans          &none      &steno_fl          &steno_ac  &steno_ou  &trans  &none
-&trans      &trans     &trans  &trans  &trans             &trans            &trans  &trans  &trans  &steno_ef  &steno_fe          &steno_af  &none      &none   &none
-&sk LSHIFT  &steno_by  &trans  &trans  &trans             &none   &trans            &trans          &none      &steno_lf          &steno_ck  &trans     &trans  &sk RSHIFT
+&trans      &steno_br  &trans  &trans  &trans             &trans                    &trans          &none      &steno_fl          &steno_ac  &steno_ou   &trans  &none
+&trans      &trans     &trans  &trans  &trans             &trans            &trans  &trans  &trans  &steno_ef  &steno_fe          &steno_af  &steno_ing  &none   &none
+&sk LSHIFT  &steno_by  &trans  &trans  &trans             &none   &trans            &trans          &none      &steno_lf          &steno_ck  &steno_ion  &trans  &sk RSHIFT
                                &trans  &kp LC(BACKSPACE)  &trans                                    &none      &kp RC(BACKSPACE)  &none
             >;
         };
 
         lazy {
             bindings = <
-&trans  &actIve_directory 0 0  &mcro_na  &mcro_2025  &trans     &trans                    &trans          &trans  &trans    &trans  &trans  &trans    &trans
-&trans  &lazy_re               &lazy_s   &lazy_nt    &trans     &trans            &trans  &trans  &trans  &trans  &trans    &kp AT  &trans  &trans    &trans
-&trans  &trans                 &trans    &trans      &trans     &trans  &trans            &trans          &trans  &lazy_ll  &trans  &trans  &lazy_ve  &trans
-                                         &trans      &lazy_cmm  &trans                                    &trans  &trans    &trans
+&trans  &actIve_directory 0 0  &mcro_na  &mcro_2025  &trans     &trans                       &trans          &trans  &trans    &trans      &trans        &trans    &trans
+&trans  &lazy_re               &lazy_s   &lazy_nt    &trans     &lazy_exe            &trans  &trans  &trans  &trans  &trans    &kp AT      &kp NUMBER_1  &kp N0    &trans
+&trans  &trans                 &trans    &trans      &trans     &trans     &trans            &trans          &trans  &lazy_ll  &lazy_like  &trans        &lazy_ve  &trans
+                                         &trans      &lazy_cmm  &trans                                       &trans  &kp N3    &trans
             >;
         };
     };
