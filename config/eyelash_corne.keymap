@@ -1,6 +1,7 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <input/processors.dtsi>
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/pointing.h>
@@ -291,10 +292,10 @@
 
         nav+hot {
             bindings = <
-&mt LC(DELETE) DELETE        &media  &none  &none  &none  &none                    &trans          &none        &none           &mmv MOVE_UP    &none            &none      &none
-&mt LC(BACKSPACE) BACKSPACE  &none   &none  &none  &none  &none            &trans  &trans  &trans  &none        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp RCLK  &none
-&kp LGUI                     &none   &none  &none  &none  &none  &trans            &trans          &none        &mt HOME PG_UP  &mt END PG_DN   &none            &none      &kp RGUI
-                                            &none  &none  &none                                    &mcro_2Mclk  &mkp LCLK       &kp RG(RS(D))
+&mt LC(DELETE) DELETE        &media  &none  &none  &none  &none                            &trans              &none        &none           &mmv MOVE_UP    &none            &none      &none
+&mt LC(BACKSPACE) BACKSPACE  &none   &none  &none  &none  &none                &bt BT_PRV  &trans  &bt BT_NXT  &none        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp RCLK  &none
+&kp LGUI                     &none   &none  &none  &none  &none  &bt BT_CLR                &trans              &none        &mt HOME PG_UP  &mt END PG_DN   &none            &none      &kp RGUI
+                                            &none  &none  &none                                                &mcro_2Mclk  &mkp LCLK       &kp RG(RS(D))
             >;
         };
 
