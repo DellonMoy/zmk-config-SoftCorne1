@@ -234,6 +234,27 @@
             bindings = <&kp COMMA &kp SPACE>;
             label = "LAZY_CMM";
         };
+
+        steno_ing: steno_ing {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp N &kp G>;
+            label = "STENO_ING";
+        };
+
+        steno_ion: steno_ion {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp O &kp N>;
+            label = "STENO_ION";
+        };
+
+        steno_ence: steno_ence {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp E &kp N &kp C &kp E>;
+            label = "STENO_ENCE";
+        };
     };
 
     keymap {
