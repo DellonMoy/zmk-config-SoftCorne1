@@ -318,10 +318,10 @@
 
         alpha {
             bindings = <
-&kp TAB  &kp X           &kp W           &kp M          &mt PRINTSCREEN P  &mt AMPS PERIOD                                  &kp UP_ARROW             &kp Q            &kp F              &kp C               &kp U            &kp J            &mt F2 F5
-&sl 4    &mt LEFT_GUI R  &mt LEFT_ALT S  &mt LCTRL T    &mt LEFT_SHIFT H   &kp B                            &kp LEFT_ARROW  &none         &kp RIGHT  &mt TILDE UNDER  &mt RIGHT_SHIFT N  &mt RCTRL A         &mt RIGHT_ALT I  &mt RIGHT_GUI O  &sl 4
-&kp RET  &kp Y           &key_repeat     &kp G          &kp D              &mt QUESTION EXCL  &kp LC(N0)                    &kp DOWN                 &kp Z            &kp L              &kp K               &key_repeat      &kp V            &kp RET
-                                         &mt F4 ESCAPE  &lt 2 SPACE        &sl 3                                                                     &sl 3            &lt 1 E            &kp LA(LC(DELETE))
+&mt AT TAB  &kp X           &kp W           &kp M          &mt PRINTSCREEN P  &mt AMPS PERIOD                                  &kp UP_ARROW             &kp Q            &kp F              &kp C               &kp U            &kp J            &mt F2 F5
+&sl 4       &mt LEFT_GUI R  &mt LEFT_ALT S  &mt LCTRL T    &mt LEFT_SHIFT H   &kp B                            &kp LEFT_ARROW  &none         &kp RIGHT  &mt TILDE UNDER  &mt RIGHT_SHIFT N  &mt RCTRL A         &mt RIGHT_ALT I  &mt RIGHT_GUI O  &sl 4
+&kp RET     &kp Y           &key_repeat     &kp G          &kp D              &mt QUESTION EXCL  &kp LC(N0)                    &kp DOWN                 &kp Z            &kp L              &kp K               &key_repeat      &kp V            &kp RET
+                                            &mt F4 ESCAPE  &lt 2 SPACE        &sl 3                                                                     &sl 3            &lt 1 E            &kp LA(LC(DELETE))
             >;
 
             sensor-bindings = <&inc_dec_kp LC(EQUAL) LC(MINUS)>;
@@ -364,7 +364,7 @@
             bindings = <
 &trans  &lazy_exe  &none    &lazy_m   &trans     &trans                   &trans          &trans  &steno_fa  &trans      &trans        &trans    &trans
 &trans  &lazy_re   &lazy_s  &lazy_nt  &trans     &none            &trans  &trans  &trans  &trans  &trans     &kp AT      &kp NUMBER_1  &kp N0    &trans
-&trans  &none      &trans   &trans    &trans     &trans  &none            &trans          &trans  &lazy_ll   &lazy_like  &trans        &lazy_ve  &trans
+&trans  &none      &trans   &trans    &trans     &trans  &to 5            &trans          &trans  &lazy_ll   &lazy_like  &trans        &lazy_ve  &trans
                             &trans    &lazy_cmm  &trans                                   &trans  &kp N3     &trans
             >;
 
@@ -373,10 +373,10 @@
 
         Gaming {
             bindings = <
-&kp TAB  &kp E  &kp Q  &kp W     &kp R      &kp T                      &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&kp H    &kp G  &kp A  &kp S     &kp D      &kp F              &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp P    &kp M  &kp Z  &kp X     &kp C      &kp V  &kp LGUI            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                       &kp LALT  &kp SPACE  &kp B                                      &trans  &trans  &trans
+&mt LGUI TAB  &kp E  &kp Q  &kp W     &kp R      &kp T                   &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&kp H         &kp G  &kp A  &kp S     &kp D      &kp F           &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp P         &kp M  &kp Z  &kp X     &kp C      &kp V  &to 0            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                            &kp LALT  &kp SPACE  &kp B                                   &trans  &trans  &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
