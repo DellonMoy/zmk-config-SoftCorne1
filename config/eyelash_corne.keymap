@@ -270,6 +270,62 @@
             bindings = <&kp E &kp X &kp E>;
             label = "LAZY_EXE";
         };
+
+        steno_rb: steno_rb {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp R &kp B>;
+            label = "STENO_RB";
+        };
+
+        steno_sw: steno_sw {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp W>;
+            label = "STENO_SW";
+        };
+
+        steno_fa: steno_fa {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F &kp A>;
+            label = "STENO_FA";
+        };
+
+        lazy_m: lazy_m {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SQT &kp M &kp SPACE>;
+            label = "LAZY_M";
+        };
+
+        steno_ry: steno_ry {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp R &kp Y>;
+            label = "STENO_RY";
+        };
+
+        steno_ys: steno_ys {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y &kp S>;
+            label = "STENO_YS";
+        };
+
+        steno_ty: steno_ty {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp Y>;
+            label = "STENO_TY";
+        };
+
+        steno_my: steno_my {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp M &kp Y>;
+            label = "STENO_MY";
+        };
     };
 
     combos {
@@ -319,10 +375,10 @@
 
         steno {
             bindings = <
-&trans      &steno_br  &none  &none  &none              &none                   &trans          &none  &steno_fl          &steno_ac  &steno_ou   &none      &none
-&none       &none      &none  &none  &none              &none           &trans  &trans  &trans  &none  &steno_fe          &steno_af  &steno_ing  &steno_ef  &none
-&sk LSHIFT  &steno_by  &none  &none  &none              &none  &none            &trans          &none  &steno_lf          &steno_ck  &steno_ion  &none      &sk RSHIFT
-                              &none  &kp LC(BACKSPACE)  &none                                   &none  &kp RC(BACKSPACE)  &none
+&trans      &steno_br  &steno_sw  &steno_my  &none              &none                   &trans          &none  &steno_fl          &steno_ac  &steno_ou   &none      &none
+&none       &steno_rb  &steno_ys  &steno_ty  &none              &none           &trans  &trans  &trans  &none  &steno_fe          &steno_af  &steno_ing  &steno_ef  &none
+&sk LSHIFT  &steno_ry  &none      &none      &none              &none  &none            &trans          &none  &steno_lf          &steno_ck  &steno_ion  &none      &sk RSHIFT
+                                  &none      &kp LC(BACKSPACE)  &none                                   &none  &kp RC(BACKSPACE)  &none
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
@@ -330,10 +386,10 @@
 
         lazy {
             bindings = <
-&trans  &actIve_directory 0 0  &none    &none     &trans     &trans                      &trans          &trans  &trans    &trans      &trans        &trans    &trans
-&trans  &lazy_re               &lazy_s  &lazy_nt  &trans     &lazy_exe           &trans  &trans  &trans  &trans  &trans    &kp AT      &kp NUMBER_1  &kp N0    &trans
-&trans  &trans                 &trans   &trans    &trans     &trans     &none            &trans          &trans  &lazy_ll  &lazy_like  &trans        &lazy_ve  &trans
-                                        &trans    &lazy_cmm  &trans                                      &trans  &kp N3    &trans
+&trans  &actIve_directory 0 0  &none    &lazy_m   &trans     &trans                      &trans          &trans  &steno_fa  &trans      &trans        &trans    &trans
+&trans  &lazy_re               &lazy_s  &lazy_nt  &trans     &lazy_exe           &trans  &trans  &trans  &trans  &trans     &kp AT      &kp NUMBER_1  &kp N0    &trans
+&trans  &steno_by              &trans   &trans    &trans     &trans     &none            &trans          &trans  &lazy_ll   &lazy_like  &trans        &lazy_ve  &trans
+                                        &trans    &lazy_cmm  &trans                                      &trans  &kp N3     &trans
             >;
         };
     };
