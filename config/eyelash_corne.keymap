@@ -278,13 +278,6 @@
             label = "STENO_RB";
         };
 
-        steno_sw: steno_sw {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp S &kp W>;
-            label = "STENO_SW";
-        };
-
         steno_fa: steno_fa {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
