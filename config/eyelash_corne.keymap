@@ -302,6 +302,13 @@
             bindings = <&kp M &kp Y>;
             label = "STENO_MY";
         };
+
+        steno_ov: steno_ov {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp O &kp V>;
+            label = "STENO_OV";
+        };
     };
 
     combos {
@@ -353,7 +360,7 @@
             bindings = <
 &trans      &none      &steno_sw  &steno_my  &none              &none                   &trans          &none  &steno_fl          &steno_ac  &steno_ou   &none      &none
 &none       &none      &steno_ys  &steno_ty  &none              &none           &trans  &trans  &trans  &none  &steno_fe          &steno_af  &steno_ing  &steno_ef  &none
-&sk LSHIFT  &steno_ry  &none      &none      &none              &none  &none            &trans          &none  &steno_lf          &steno_ck  &steno_ion  &none      &sk RSHIFT
+&sk LSHIFT  &steno_ry  &none      &none      &none              &none  &none            &trans          &none  &steno_lf          &steno_ck  &steno_ion  &steno_ov  &sk RSHIFT
                                   &none      &kp LC(BACKSPACE)  &none                                   &none  &kp RC(BACKSPACE)  &none
             >;
 
