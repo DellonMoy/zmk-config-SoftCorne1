@@ -367,6 +367,19 @@
 &trans  &none      &trans   &trans    &trans     &trans  &none            &trans          &trans  &lazy_ll   &lazy_like  &trans        &lazy_ve  &trans
                             &trans    &lazy_cmm  &trans                                   &trans  &kp N3     &trans
             >;
+
+            sensor-bindings = <&scroll_encoder>;
+        };
+
+        Gaming {
+            bindings = <
+&kp TAB  &kp E  &kp Q  &kp W     &kp R      &kp T                      &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&kp H    &kp G  &kp A  &kp S     &kp D      &kp F              &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp P    &kp M  &kp Z  &kp X     &kp C      &kp V  &kp LGUI            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                       &kp LALT  &kp SPACE  &kp B                                      &trans  &trans  &trans
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
         };
     };
 };
