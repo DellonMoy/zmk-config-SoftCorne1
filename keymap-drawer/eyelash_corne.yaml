@@ -61,7 +61,7 @@ layers:
   - '#'
   - {t: '''', h: '"', s: '"'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:backspace$$', type: backspace}
   - '&key_repeat'
   - {t: '4', s: $}
@@ -100,9 +100,9 @@ layers:
   nav+hot:
   - {t: '$$mdi:backspace-reverse-outline$$', h: 'Ctl+$$mdi:backspace-reverse-outline$$'}
   - '&media'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&mcro_na'
   - $$mdi:arrow-up-bold$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&mcro_2025'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -198,8 +198,8 @@ layers:
   lazy:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '&mcro_ad', h: '&mcro_sad'}
-  - '&mcro_na'
-  - '&mcro_2025'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
