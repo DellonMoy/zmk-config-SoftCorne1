@@ -272,6 +272,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        cmbo_cap {
+            bindings = <&caps_word>;
+            key-positions = <44 45>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
