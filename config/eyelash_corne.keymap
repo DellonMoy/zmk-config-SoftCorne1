@@ -26,9 +26,15 @@
 &mt {
     tapping-term-ms = <200>;
     flavor = "tap-preferred";
+    require-prior-idle-ms = <100>;
 };
 
-&lt { tapping-term-ms = <200>; };
+&lt {
+    tapping-term-ms = <200>;
+    require-prior-idle-ms = <100>;
+};
+
+&caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE MINUS N1 N2 N3 N4 N5 N6 N7 N8 N9 N0>; };
 
 / {
     behaviors {
@@ -57,6 +63,13 @@
             #binding-cells = <0>;
             bindings = <&mt C_PP C_NEXT>, <&kp C_PREV>;
         };
+
+        bt_loop: bt_loop {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "BT_LOOP";
+            #sensor-binding-cells = <0>;
+            bindings = <&bt BT_NXT>, <&bt BT_PRV>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -74,13 +87,6 @@
     };
 
     macros {
-        steno_br: steno_br {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp B &kp R>;
-            label = "STENO_BR";
-        };
-
         mcro_sQuote: mcro_sQuote {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -107,13 +113,6 @@
             #binding-cells = <0>;
             bindings = <&kp N2 &kp N0 &kp N2 &kp N5>;
             label = "MCRO_2025";
-        };
-
-        steno_by: steno_by {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp B &kp Y>;
-            label = "STENO_BY";
         };
 
         mcro_ad: mcro_ad {
@@ -263,6 +262,93 @@
             bindings = <&kp E &kp X &kp E>;
             label = "LAZY_EXE";
         };
+
+        steno_fa: steno_fa {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F &kp A>;
+            label = "STENO_FA";
+        };
+
+        lazy_m: lazy_m {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SQT &kp M &kp SPACE>;
+            label = "LAZY_M";
+        };
+
+        steno_ry: steno_ry {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp R &kp Y>;
+            label = "STENO_RY";
+        };
+
+        steno_ys: steno_ys {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y &kp S>;
+            label = "STENO_YS";
+        };
+
+        steno_ty: steno_ty {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp Y>;
+            label = "STENO_TY";
+        };
+
+        steno_my: steno_my {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp M &kp Y>;
+            label = "STENO_MY";
+        };
+
+        steno_ov: steno_ov {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp O &kp V>;
+            label = "STENO_OV";
+        };
+
+        steno_gm: steno_gm {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp M>;
+            label = "STENO_GM";
+        };
+
+        lazy_ca: lazy_ca {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C &kp A>;
+            label = "LAZY_CA";
+        };
+
+        lazy_c: lazy_c {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C &kp SQT>;
+            label = "LAZY_C";
+        };
+
+        lazy_d: lazy_d {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SQT &kp D>;
+            label = "LAZY_D";
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        cmbo_cap {
+            bindings = <&caps_word>;
+            key-positions = <44 45>;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -270,18 +356,19 @@
 
         alpha {
             bindings = <
-&kp TAB  &kp B           &kp W           &kp M          &mt PRINTSCREEN P  &mt AMPS PERIOD                                  &kp UP_ARROW             &kp Q            &kp F              &kp C               &kp U            &kp J            &mt F2 F5
-&sl 4    &mt LEFT_GUI R  &mt LEFT_ALT S  &mt LCTRL T    &mt LEFT_SHIFT H   &kp X                            &kp LEFT_ARROW  &none         &kp RIGHT  &mt TILDE UNDER  &mt RIGHT_SHIFT N  &mt RCTRL A         &mt RIGHT_ALT I  &mt RIGHT_GUI O  &sl 4
-&kp RET  &kp Y           &key_repeat     &kp G          &kp D              &mt QUESTION EXCL  &kp LC(N0)                    &kp DOWN                 &kp Z            &kp L              &kp K               &key_repeat      &kp V            &kp RET
-                                         &mt F4 ESCAPE  &lt 2 SPACE        &sl 3                                                                     &sl 3            &lt 1 E            &kp LA(LC(DELETE))
+&kp TAB    &mt QUESTION EXCL  &kp W           &kp M          &mt PRINTSCREEN P  &kp X                                &kp UP_ARROW             &kp Q            &kp F              &kp C               &kp U            &kp J            &mt F2 F5
+&sl 4      &mt LEFT_GUI R     &mt LEFT_ALT S  &mt LCTRL T    &mt LEFT_SHIFT H   &kp B                &kp LEFT_ARROW  &none         &kp RIGHT  &mt TILDE UNDER  &mt RIGHT_SHIFT N  &mt RCTRL A         &mt RIGHT_ALT I  &mt RIGHT_GUI O  &sl 4
+&kp ENTER  &mt AT Y           &key_repeat     &kp G          &kp D              &kp Z  &kp LC(N0)                    &kp DOWN                 &none            &kp L              &kp K               &key_repeat      &kp V            &kp ENTER
+                                              &mt F4 ESCAPE  &lt 2 SPACE        &sl 3                                                         &sl 3            &lt 1 E            &kp LA(LC(DELETE))
             >;
 
             sensor-bindings = <&inc_dec_kp LC(EQUAL) LC(MINUS)>;
         };
 
         num+sym {
+            label = "num+sym";
             bindings = <
-&kp DEL   &kp EQUAL    &kp N1  &kp N2      &kp N3     &kp DOLLAR                              &none           &kp GRAVE  &mt PIPE BSLH                   &kp HASH                            &mt DOUBLE_QUOTES SINGLE_QUOTE  &none                          &none
+&kp DEL   &kp EQUAL    &kp N1  &kp N2      &kp N3     &kp DOLLAR                              &none           &kp GRAVE  &mt PIPE BSLH                   &kp HASH                            &mt DOUBLE_QUOTES SINGLE_QUOTE  &none                          &sk RCTRL
 &kp BSPC  &key_repeat  &kp N4  &kp N5      &kp N6     &kp N0                          &trans  &trans  &trans  &none      &mt CARET ASTRK                 &kp FSLH                            &kp PLUS                        &kp MINUS                      &mt COLON SEMICOLON
 &trans    &kp N0       &kp N7  &kp N8      &kp N9     &kp PERCENT       &kp C_MUTE            &none           &none      &mt LESS_THAN LEFT_PARENTHESIS  &mt GREATER_THAN RIGHT_PARENTHESIS  &mt LEFT_BRACE LEFT_BRACKET     &mt RIGHT_BRACE RIGHT_BRACKET  &none
                                &sk LSHIFT  &kp SPACE  &mt COMMA PERIOD                                        &none      &none                           &none
@@ -291,32 +378,49 @@
         };
 
         nav+hot {
+            label = "nav+hot";
             bindings = <
-&mt LC(DELETE) DELETE        &media  &none  &none  &none  &none                            &trans                  &none        &none           &mmv MOVE_UP    &none            &none      &none
-&mt LC(BACKSPACE) BACKSPACE  &none   &none  &none  &none  &none                &bt BT_PRV  &bt BT_CLR  &bt BT_NXT  &none        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp RCLK  &none
-&kp LGUI                     &none   &none  &none  &none  &none  &bt BT_CLR                &trans                  &none        &mt HOME PG_UP  &mt END PG_DN   &none            &none      &kp RGUI
-                                            &none  &none  &none                                                    &mcro_2Mclk  &mkp LCLK       &kp RG(RS(D))
+&mt LC(DELETE) DELETE        &media     &mcro_na         &kp UP           &mcro_2025       &none                                       &trans         &none        &none           &mmv MOVE_UP    &none            &none      &none
+&mt LC(BACKSPACE) BACKSPACE  &kp LC(A)  &kp LEFT         &kp DOWN         &kp RIGHT        &actIve_directory 0 0                &none  &none   &none  &none        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp RCLK  &kp RGUI
+&kp LGUI                     &kp LC(F)  &mt LG(V) LC(V)  &mt LC(X) LC(C)  &mt LC(Y) LC(Z)  &none                  &bt BT_CLR           &trans         &none        &mt HOME PG_UP  &mt END PG_DN   &sk RSHFT        &sk RCTRL  &none
+                                                         &none            &none            &none                                                      &mcro_2Mclk  &mkp LCLK       &kp RG(RS(D))
             >;
+
+            sensor-bindings = <&bt_loop>;
         };
 
         steno {
             bindings = <
-&trans      &steno_br  &none  &none  &none              &none                   &trans          &none      &steno_fl          &steno_ac  &steno_ou   &none  &none
-&none       &none      &none  &none  &none              &none           &trans  &trans  &trans  &steno_ef  &steno_fe          &steno_af  &steno_ing  &none  &none
-&sk LSHIFT  &steno_by  &none  &none  &none              &none  &none            &trans          &none      &steno_lf          &steno_ck  &steno_ion  &none  &sk RSHIFT
-                              &none  &kp LC(BACKSPACE)  &none                                   &none      &kp RC(BACKSPACE)  &none
+&trans      &none      &steno_sw  &steno_my  &none              &none                             &trans          &none  &steno_fl          &steno_ac  &steno_ou   &none      &none
+&none       &none      &steno_ys  &steno_ty  &none              &mt AMPS PERIOD           &trans  &trans  &trans  &none  &steno_fe          &steno_af  &steno_ing  &steno_ef  &none
+&sk LSHIFT  &steno_ry  &none      &steno_gm  &none              &none            &none            &trans          &none  &steno_lf          &steno_ck  &steno_ion  &steno_ov  &sk RSHIFT
+                                  &none      &kp LC(BACKSPACE)  &none                                             &none  &kp RC(BACKSPACE)  &none
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
         };
 
         lazy {
+            label = "lazy";
             bindings = <
-&trans  &actIve_directory 0 0  &mcro_na  &mcro_2025  &trans     &trans                       &trans          &trans  &trans    &trans      &trans        &trans    &trans
-&trans  &lazy_re               &lazy_s   &lazy_nt    &trans     &lazy_exe            &trans  &trans  &trans  &trans  &trans    &kp AT      &kp NUMBER_1  &kp N0    &trans
-&trans  &trans                 &trans    &trans      &trans     &trans     &trans            &trans          &trans  &lazy_ll  &lazy_like  &trans        &lazy_ve  &trans
-                                         &trans      &lazy_cmm  &trans                                       &trans  &kp N3    &trans
+&none  &none     &none    &lazy_m   &none      &lazy_exe                   &trans          &none  &steno_fa  &lazy_ca    &lazy_c       &none     &none
+&none  &lazy_re  &lazy_s  &lazy_nt  &none      &none               &trans  &trans  &trans  &none  &none      &kp AT      &kp NUMBER_1  &kp N0    &none
+&none  &none     &none    &none     &lazy_d    &none      &to 5            &trans          &none  &lazy_ll   &lazy_like  &none         &lazy_ve  &none
+                          &trans    &lazy_cmm  &none                                       &none  &kp N3     &none
             >;
+
+            sensor-bindings = <&scroll_encoder>;
+        };
+
+        Gaming {
+            bindings = <
+&mt LGUI TAB  &kp E  &kp Q  &kp W     &kp R      &kp T                   &trans          &none  &none  &none  &none  &none  &none
+&kp H         &kp G  &kp A  &kp S     &kp D      &kp F           &trans  &trans  &trans  &none  &none  &none  &none  &none  &none
+&kp P         &kp M  &kp Z  &kp X     &kp C      &kp V  &to 0            &trans          &none  &none  &none  &none  &none  &none
+                            &kp LALT  &kp SPACE  &kp B                                   &none  &none  &none
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
         };
     };
 };
