@@ -376,6 +376,7 @@
         compatible = "zmk,keymap";
 
         alpha {
+            label = "alpha";
             bindings = <
 &kp TAB    &mt QUESTION EXCL  &kp W           &kp M          &mt PRINTSCREEN P  &kp X                                &kp UP_ARROW             &kp Q            &kp F              &kp C               &kp U            &kp J            &mt F2 F5
 &sl 4      &mt LEFT_GUI R     &mt LEFT_ALT S  &mt LCTRL T    &mt LEFT_SHIFT H   &kp B                &kp LEFT_ARROW  &none         &kp RIGHT  &mt TILDE UNDER  &mt RIGHT_SHIFT N  &mt RCTRL A         &mt RIGHT_ALT I  &mt RIGHT_GUI O  &sl 4
@@ -411,6 +412,7 @@
         };
 
         steno {
+            label = "steno";
             bindings = <
 &trans      &none      &steno_sw  &steno_my  &none              &none                             &trans          &none  &steno_fl          &steno_ac  &steno_ou   &none      &none
 &none       &none      &steno_ys  &steno_ty  &none              &mt AMPS PERIOD           &trans  &trans  &trans  &none  &steno_fe          &steno_af  &steno_ing  &steno_ef  &none
@@ -434,6 +436,7 @@
         };
 
         Gaming {
+            label = "gaming";
             bindings = <
 &mt LGUI TAB  &kp E  &kp Q  &kp W     &kp R      &kp T                   &trans          &none  &none  &none  &none  &none  &none
 &kp H         &kp G  &kp A  &kp S     &kp D      &kp F           &trans  &trans  &trans  &none  &none  &none  &none  &none  &none
