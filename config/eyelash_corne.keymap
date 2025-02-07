@@ -341,6 +341,7 @@
         compatible = "zmk,keymap";
 
         alpha {
+            label = "alpha";
             bindings = <
 &kp TAB      &kp X           &kp W           &kp M          &mt PRINTSCREEN P  &mt AMPS PERIOD                                &kp UP_ARROW             &kp Q                     &kp F              &kp C               &kp U            &kp J            &mt F2 F5
 &lt 4 ENTER  &mt LEFT_GUI R  &mt LEFT_ALT S  &mt LCTRL T    &mt LEFT_SHIFT H   &kp B                          &kp LEFT_ARROW  &none         &kp RIGHT  &mt TILDE UNDER           &mt RIGHT_SHIFT N  &mt RCTRL A         &mt RIGHT_ALT I  &mt RIGHT_GUI O  &lt 4 ENTER
@@ -352,6 +353,7 @@
         };
 
         num+sym {
+            label = "num+sym";
             bindings = <
 &kp DEL   &kp EQUAL    &kp N1  &kp N2      &kp N3     &kp DOLLAR                              &none           &kp GRAVE  &mt PIPE BSLH                   &kp HASH                            &mt DOUBLE_QUOTES SINGLE_QUOTE  &none                          &sk RCTRL
 &kp BSPC  &key_repeat  &kp N4  &kp N5      &kp N6     &kp N0                          &trans  &trans  &trans  &none      &mt CARET ASTRK                 &kp FSLH                            &kp PLUS                        &kp MINUS                      &mt COLON SEMICOLON
@@ -363,6 +365,7 @@
         };
 
         nav+hot {
+            label = "nav+hot";
             bindings = <
 &mt LC(DELETE) DELETE        &media     &mcro_na         &kp UP           &mcro_2025       &none                                       &trans         &none        &none           &mmv MOVE_UP    &none            &none      &none
 &mt LC(BACKSPACE) BACKSPACE  &kp LC(A)  &kp LEFT         &kp DOWN         &kp RIGHT        &actIve_directory 0 0                &none  &none   &none  &none        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp RCLK  &kp RGUI
@@ -374,6 +377,7 @@
         };
 
         steno {
+            label = "steno";
             bindings = <
 &trans      &none      &steno_sw  &steno_my  &none              &none                   &trans          &none  &steno_fl          &steno_ac  &steno_ou   &none      &none
 &none       &none      &steno_ys  &steno_ty  &none              &none           &trans  &trans  &trans  &none  &steno_fe          &steno_af  &steno_ing  &steno_ef  &none
@@ -385,6 +389,7 @@
         };
 
         lazy {
+            label = "lazy";
             bindings = <
 &none  &lazy_exe  &none    &lazy_m   &none      &none                   &trans          &none  &steno_fa  &lazy_ca    &none         &none     &none
 &none  &lazy_re   &lazy_s  &lazy_nt  &none      &none           &trans  &trans  &trans  &none  &none      &kp AT      &kp NUMBER_1  &kp N0    &none
@@ -396,6 +401,7 @@
         };
 
         Gaming {
+            label = "gaming";
             bindings = <
 &mt LGUI TAB  &kp E  &kp Q  &kp W     &kp R      &kp T                   &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &kp H         &kp G  &kp A  &kp S     &kp D      &kp F           &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
