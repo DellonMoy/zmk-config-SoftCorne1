@@ -34,6 +34,8 @@
     require-prior-idle-ms = <100>;
 };
 
+&caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE MINUS N1 N2 N3 N4 N5 N6 N7 N8 N9 N0>; };
+
 / {
     behaviors {
         td0: td0 {
@@ -324,6 +326,7 @@
         cmbo_cap {
             bindings = <&caps_word>;
             key-positions = <44 45>;
+            layers = <0>;
         };
     };
 
