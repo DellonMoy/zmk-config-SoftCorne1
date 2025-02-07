@@ -13,7 +13,7 @@ layers:
   - U
   - J
   - {t: F5, h: F2}
-  - {t: lazy, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:keyboard-return$$', h: lazy}
   - {t: R, h: '$$mdi:apple-keyboard-command$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: T, h: '$$mdi:apple-keyboard-control$$'}
@@ -27,8 +27,8 @@ layers:
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: I, h: '$$mdi:apple-keyboard-option$$'}
   - {t: O, h: RIGHT GUI}
-  - {t: lazy, h: '$$mdi:gesture-tap-hold$$'}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:keyboard-return$$', h: lazy}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Y
   - '&key_repeat'
   - G
@@ -41,7 +41,7 @@ layers:
   - K
   - '&key_repeat'
   - V
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:keyboard-esc$$', h: F4}
   - {t: '$$mdi:keyboard-space$$', h: nav+hot}
   - {t: steno, h: '$$mdi:gesture-tap-hold$$'}
