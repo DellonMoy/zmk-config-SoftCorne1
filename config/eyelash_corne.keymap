@@ -318,6 +318,13 @@
             bindings = <&kp G &kp M>;
             label = "STENO_GM";
         };
+
+        lazy_ca: lazy_ca {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C &kp A>;
+            label = "LAZY_CA";
+        };
     };
 
     combos {
@@ -335,10 +342,10 @@
 
         alpha {
             bindings = <
-&kp TAB      &kp X           &kp W           &kp M          &mt PRINTSCREEN P  &mt AMPS PERIOD                                  &kp UP_ARROW             &kp Q            &kp F              &kp C               &kp U            &kp J            &mt F2 F5
-&lt 4 ENTER  &mt LEFT_GUI R  &mt LEFT_ALT S  &mt LCTRL T    &mt LEFT_SHIFT H   &kp B                            &kp LEFT_ARROW  &none         &kp RIGHT  &mt TILDE UNDER  &mt RIGHT_SHIFT N  &mt RCTRL A         &mt RIGHT_ALT I  &mt RIGHT_GUI O  &lt 4 ENTER
-&none        &mt AT Y        &key_repeat     &kp G          &kp D              &mt QUESTION EXCL  &kp LC(N0)                    &kp DOWN                 &kp Z            &kp L              &kp K               &key_repeat      &kp V            &none
-                                             &mt F4 ESCAPE  &lt 2 SPACE        &sl 3                                                                     &sl 3            &lt 1 E            &kp LA(LC(DELETE))
+&kp TAB      &kp X           &kp W           &kp M          &mt PRINTSCREEN P  &mt AMPS PERIOD                                &kp UP_ARROW             &kp Q                     &kp F              &kp C               &kp U            &kp J            &mt F2 F5
+&lt 4 ENTER  &mt LEFT_GUI R  &mt LEFT_ALT S  &mt LCTRL T    &mt LEFT_SHIFT H   &kp B                          &kp LEFT_ARROW  &none         &kp RIGHT  &mt TILDE UNDER           &mt RIGHT_SHIFT N  &mt RCTRL A         &mt RIGHT_ALT I  &mt RIGHT_GUI O  &lt 4 ENTER
+&none        &mt AT Y        &key_repeat     &kp G          &kp D              &kp Z            &kp LC(N0)                    &kp DOWN                 &mt QUESTION EXCLAMATION  &kp L              &kp K               &key_repeat      &kp V            &none
+                                             &mt F4 ESCAPE  &lt 2 SPACE        &sl 3                                                                   &sl 3                     &lt 1 E            &kp LA(LC(DELETE))
             >;
 
             sensor-bindings = <&inc_dec_kp LC(EQUAL) LC(MINUS)>;
@@ -358,8 +365,8 @@
         nav+hot {
             bindings = <
 &mt LC(DELETE) DELETE        &media     &mcro_na         &kp UP           &mcro_2025       &none                                       &trans         &none        &none           &mmv MOVE_UP    &none            &none      &none
-&mt LC(BACKSPACE) BACKSPACE  &kp LC(A)  &kp LEFT         &kp DOWN         &kp RIGHT        &actIve_directory 0 0                &none  &none   &none  &none        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp RCLK  &none
-&kp LGUI                     &kp LC(F)  &mt LG(V) LC(V)  &mt LC(X) LC(C)  &mt LC(Y) LC(Z)  &none                  &bt BT_CLR           &trans         &none        &mt HOME PG_UP  &mt END PG_DN   &sk RSHFT        &sk RCTRL  &kp RGUI
+&mt LC(BACKSPACE) BACKSPACE  &kp LC(A)  &kp LEFT         &kp DOWN         &kp RIGHT        &actIve_directory 0 0                &none  &none   &none  &none        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp RCLK  &kp RGUI
+&kp LGUI                     &kp LC(F)  &mt LG(V) LC(V)  &mt LC(X) LC(C)  &mt LC(Y) LC(Z)  &none                  &bt BT_CLR           &trans         &none        &mt HOME PG_UP  &mt END PG_DN   &sk RSHFT        &sk RCTRL  &none
                                                          &none            &none            &none                                                      &mcro_2Mclk  &mkp LCLK       &kp RG(RS(D))
             >;
 
@@ -379,10 +386,10 @@
 
         lazy {
             bindings = <
-&trans  &lazy_exe  &none    &lazy_m   &trans     &trans                   &trans          &trans  &steno_fa  &trans      &trans        &trans    &trans
-&trans  &lazy_re   &lazy_s  &lazy_nt  &trans     &none            &trans  &trans  &trans  &trans  &trans     &kp AT      &kp NUMBER_1  &kp N0    &trans
-&trans  &none      &trans   &trans    &trans     &trans  &to 5            &trans          &trans  &lazy_ll   &lazy_like  &trans        &lazy_ve  &trans
-                            &trans    &lazy_cmm  &trans                                   &trans  &kp N3     &trans
+&none  &lazy_exe  &none    &lazy_m   &none      &none                   &trans          &none  &steno_fa  &lazy_ca    &none         &none     &none
+&none  &lazy_re   &lazy_s  &lazy_nt  &none      &none           &trans  &trans  &trans  &none  &none      &kp AT      &kp NUMBER_1  &kp N0    &none
+&none  &none      &none    &none     &none      &none  &to 5            &trans          &none  &lazy_ll   &lazy_like  &trans        &lazy_ve  &none
+                           &trans    &lazy_cmm  &none                                   &none  &kp N3     &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
