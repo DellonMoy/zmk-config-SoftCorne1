@@ -325,6 +325,20 @@
             bindings = <&kp C &kp A>;
             label = "LAZY_CA";
         };
+
+        lazy_c: lazy_c {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C &kp SQT>;
+            label = "LAZY_C";
+        };
+
+        lazy_d: lazy_d {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SQT &kp D>;
+            label = "LAZY_D";
+        };
     };
 
     combos {
@@ -389,10 +403,10 @@
         lazy {
             label = "lazy";
             bindings = <
-&none  &lazy_exe  &none    &lazy_m   &none      &none                   &trans          &none  &steno_fa  &lazy_ca    &none         &none     &none
-&none  &lazy_re   &lazy_s  &lazy_nt  &none      &none           &trans  &trans  &trans  &none  &none      &kp AT      &kp NUMBER_1  &kp N0    &none
-&none  &none      &none    &none     &none      &none  &to 5            &trans          &none  &lazy_ll   &lazy_like  &trans        &lazy_ve  &none
-                           &trans    &lazy_cmm  &none                                   &none  &kp N3     &none
+&none  &none     &none    &lazy_m   &none      &lazy_exe                   &trans          &none  &steno_fa  &lazy_ca    &lazy_c       &none     &none
+&none  &lazy_re  &lazy_s  &lazy_nt  &none      &none               &trans  &trans  &trans  &none  &none      &kp AT      &kp NUMBER_1  &kp N0    &none
+&none  &none     &none    &none     &lazy_d    &none      &to 5            &trans          &none  &lazy_ll   &lazy_like  &none         &lazy_ve  &none
+                          &trans    &lazy_cmm  &none                                       &none  &kp N3     &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
