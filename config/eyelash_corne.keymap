@@ -325,10 +325,10 @@
 
         alpha {
             bindings = <
-&mt AT TAB  &kp X           &kp W           &kp M          &mt PRINTSCREEN P  &mt AMPS PERIOD                                  &kp UP_ARROW             &kp Q            &kp F              &kp C               &kp U            &kp J            &mt F2 F5
-&sl 4       &mt LEFT_GUI R  &mt LEFT_ALT S  &mt LCTRL T    &mt LEFT_SHIFT H   &kp B                            &kp LEFT_ARROW  &none         &kp RIGHT  &mt TILDE UNDER  &mt RIGHT_SHIFT N  &mt RCTRL A         &mt RIGHT_ALT I  &mt RIGHT_GUI O  &sl 4
-&kp RET     &kp Y           &key_repeat     &kp G          &kp D              &mt QUESTION EXCL  &kp LC(N0)                    &kp DOWN                 &kp Z            &kp L              &kp K               &key_repeat      &kp V            &kp RET
-                                            &mt F4 ESCAPE  &lt 2 SPACE        &sl 3                                                                     &sl 3            &lt 1 E            &kp LA(LC(DELETE))
+&mt AT TAB   &kp X           &kp W           &kp M          &mt PRINTSCREEN P  &mt AMPS PERIOD                                  &kp UP_ARROW             &kp Q            &kp F              &kp C               &kp U            &kp J            &mt F2 F5
+&lt 4 ENTER  &mt LEFT_GUI R  &mt LEFT_ALT S  &mt LCTRL T    &mt LEFT_SHIFT H   &kp B                            &kp LEFT_ARROW  &none         &kp RIGHT  &mt TILDE UNDER  &mt RIGHT_SHIFT N  &mt RCTRL A         &mt RIGHT_ALT I  &mt RIGHT_GUI O  &lt 4 ENTER
+&none        &kp Y           &key_repeat     &kp G          &kp D              &mt QUESTION EXCL  &kp LC(N0)                    &kp DOWN                 &kp Z            &kp L              &kp K               &key_repeat      &kp V            &none
+                                             &mt F4 ESCAPE  &lt 2 SPACE        &sl 3                                                                     &sl 3            &lt 1 E            &kp LA(LC(DELETE))
             >;
 
             sensor-bindings = <&inc_dec_kp LC(EQUAL) LC(MINUS)>;
