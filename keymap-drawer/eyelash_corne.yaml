@@ -230,7 +230,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&lazy_d'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: Gaming, h: toggle}
+  - {t: gaming, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&lazy_ll'
@@ -244,7 +244,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '3', s: '#'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  Gaming:
+  gaming:
   - {t: '$$mdi:keyboard-tab$$', h: LGUI}
   - E
   - Q
