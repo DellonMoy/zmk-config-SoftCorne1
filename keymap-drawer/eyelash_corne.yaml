@@ -1,11 +1,11 @@
 layers:
   alpha:
   - $$mdi:keyboard-tab$$
-  - X
+  - {t: '!', h: '?'}
   - W
   - M
   - {t: P, h: PRINTSCREEN}
-  - {t: ., h: '&'}
+  - X
   - $$mdi:arrow-up-bold$$
   - Q
   - F
@@ -13,7 +13,7 @@ layers:
   - U
   - J
   - {t: F5, h: F2}
-  - {t: '$$mdi:keyboard-return$$', h: lazy}
+  - {t: lazy, h: '$$mdi:gesture-tap-hold$$'}
   - {t: R, h: '$$mdi:apple-keyboard-command$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: T, h: '$$mdi:apple-keyboard-control$$'}
@@ -27,8 +27,8 @@ layers:
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: I, h: '$$mdi:apple-keyboard-option$$'}
   - {t: O, h: RIGHT GUI}
-  - {t: '$$mdi:keyboard-return$$', h: lazy}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: lazy, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: Y, h: '@'}
   - '&key_repeat'
   - G
@@ -36,12 +36,12 @@ layers:
   - Z
   - {t: Ctl+0, s: Ctl+)}
   - $$mdi:arrow-down-bold$$
-  - {t: '!', h: '?'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - L
   - K
   - '&key_repeat'
   - V
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-esc$$', h: F4}
   - {t: '$$mdi:keyboard-space$$', h: nav+hot}
   - {t: steno, h: '$$mdi:gesture-tap-hold$$'}
@@ -165,7 +165,7 @@ layers:
   - '&steno_ys'
   - '&steno_ty'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: ., h: '&'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -230,7 +230,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: gaming, h: toggle}
+  - {t: Gaming, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&lazy_ll'
@@ -244,7 +244,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '3', s: '#'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  gaming:
+  Gaming:
   - {t: '$$mdi:keyboard-tab$$', h: LGUI}
   - E
   - Q
@@ -252,12 +252,12 @@ layers:
   - R
   - T
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - H
   - G
   - A
@@ -267,12 +267,12 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - P
   - M
   - Z
@@ -281,18 +281,18 @@ layers:
   - V
   - {t: alpha, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
   - B
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
 combos:
 - p: [44, 45]
   k: $$mdi:alpha-w-box$$
