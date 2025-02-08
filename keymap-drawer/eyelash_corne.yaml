@@ -143,8 +143,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - '&mcro_2Mclk'
   - $$mdi:mouse-left-click-outline$$
+  - '&mcro_2Mclk'
   - Gui+Sft+D
   steno:
   - {t: '$$mdi:transfer$$', type: trans}
