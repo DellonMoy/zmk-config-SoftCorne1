@@ -360,6 +360,13 @@
             bindings = <&kp C &kp O &kp N>;
             label = "LAZY_CON";
         };
+
+        lazy_eve: lazy_eve {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp E &kp V &kp E>;
+            label = "LAZY_EVE";
+        };
     };
 
     combos {
@@ -429,7 +436,7 @@
 &none  &none     &none    &lazy_m   &none      &lazy_exe                   &trans          &none  &steno_fa  &lazy_ca    &lazy_c     &none      &none
 &none  &lazy_re  &lazy_s  &lazy_nt  &none      &none               &trans  &trans  &trans  &none  &none      &kp AT      &lazy_iest  &lazy_con  &none
 &none  &none     &none    &none     &lazy_d    &none      &to 5            &trans          &none  &lazy_ll   &lazy_like  &lazy_ious  &lazy_ve   &none
-                          &trans    &lazy_cmm  &none                                       &none  &kp N3     &none
+                          &trans    &lazy_cmm  &none                                       &none  &lazy_eve  &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
