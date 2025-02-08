@@ -385,10 +385,10 @@
         alpha {
             label = "alpha";
             bindings = <
-&kp TAB    &mt QUESTION EXCL  &kp W           &kp M          &mt PRINTSCREEN P  &kp X                                          &kp UP_ARROW             &kp Q            &kp F              &kp C               &kp U            &kp J            &mt F2 F5
-&sl 4      &mt LEFT_GUI R     &mt LEFT_ALT S  &mt LCTRL T    &mt LEFT_SHIFT H   &kp B                          &kp LEFT_ARROW  &none         &kp RIGHT  &mt TILDE UNDER  &mt RIGHT_SHIFT N  &mt RCTRL A         &mt RIGHT_ALT I  &mt RIGHT_GUI O  &sl 4
-&kp ENTER  &mt AT Y           &key_repeat     &kp G          &kp D              &mt AMPS PERIOD  &kp LC(N0)                    &kp DOWN                 &kp Z            &kp L              &kp K               &key_repeat      &kp V            &kp ENTER
-                                              &mt F4 ESCAPE  &sl 3              &lt 2 SPACE                                                             &lt 1 E          &sl 3              &kp LA(LC(DELETE))
+&kp TAB    &mt QUESTION EXCL  &kp W           &kp M          &mt PRINTSCREEN P  &kp X                                 &sl 3         &kp Q            &kp F              &kp C               &kp U            &kp J            &mt F2 F5
+&sl 4      &mt LEFT_GUI R     &mt LEFT_ALT S  &mt LCTRL T    &mt LEFT_SHIFT H   &kp B                          &none  &none  &none  &mt TILDE UNDER  &mt RIGHT_SHIFT N  &mt RCTRL A         &mt RIGHT_ALT I  &mt RIGHT_GUI O  &sl 4
+&kp ENTER  &mt AT Y           &key_repeat     &kp G          &kp D              &mt AMPS PERIOD  &kp LC(N0)           &none         &kp Z            &kp L              &kp K               &key_repeat      &kp V            &kp ENTER
+                                              &mt F4 ESCAPE  &sl 3              &lt 2 SPACE                                         &lt 1 E          &sl 3              &kp LA(LC(DELETE))
             >;
 
             sensor-bindings = <&inc_dec_kp LC(EQUAL) LC(MINUS)>;
@@ -445,8 +445,8 @@
         Gaming {
             label = "gaming";
             bindings = <
-&mt LGUI TAB  &kp E  &kp Q  &kp W     &kp R  &kp T                      &none         &none  &none  &none  &none  &none  &none
-&kp LSHFT     &kp G  &kp A  &kp S     &kp D  &kp F               &none  &none  &none  &none  &none  &none  &none  &none  &none
+&mt LGUI TAB  &kp F  &kp Q  &kp W     &kp E  &kp T                      &none         &none  &none  &none  &none  &none  &none
+&kp LSHFT     &kp G  &kp A  &kp S     &kp D  &kp R               &none  &none  &none  &none  &none  &none  &none  &none  &none
 &kp P         &kp M  &kp Z  &kp X     &kp C  &kp V      &to 0           &none         &none  &none  &none  &none  &none  &none
                             &kp LALT  &kp B  &kp SPACE                                &none  &none  &none
             >;
