@@ -242,7 +242,7 @@ layers:
   - '&lazy_cmm'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '3', s: '#'}
+  - '&lazy_eve'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   gaming:
   - {t: '$$mdi:keyboard-tab$$', h: LGUI}
