@@ -397,10 +397,10 @@
         num+sym {
             label = "num+sym";
             bindings = <
-&kp DEL   &kp EQUAL    &kp N1  &kp N2      &kp N3     &kp DOLLAR                              &none           &kp GRAVE  &mt PIPE BSLH                   &kp HASH                            &mt DOUBLE_QUOTES SINGLE_QUOTE  &none                          &sk RCTRL
-&kp BSPC  &key_repeat  &kp N4  &kp N5      &kp N6     &kp N0                          &trans  &trans  &trans  &none      &mt CARET ASTRK                 &kp FSLH                            &kp PLUS                        &kp MINUS                      &mt COLON SEMICOLON
-&trans    &kp N0       &kp N7  &kp N8      &kp N9     &kp PERCENT       &kp C_MUTE            &none           &none      &mt LESS_THAN LEFT_PARENTHESIS  &mt GREATER_THAN RIGHT_PARENTHESIS  &mt LEFT_BRACE LEFT_BRACKET     &mt RIGHT_BRACE RIGHT_BRACKET  &none
-                               &sk LSHIFT  &kp SPACE  &mt COMMA PERIOD                                        &none      &none                           &none
+&kp DEL   &kp EQUAL    &kp N1  &kp N2      &kp N3     &kp DOLLAR                             &none         &kp GRAVE  &mt PIPE BSLH                   &kp HASH                            &mt DOUBLE_QUOTES SINGLE_QUOTE  &none                          &sk RCTRL
+&kp BSPC  &key_repeat  &kp N4  &kp N5      &kp N6     &kp N0                          &none  &none  &none  &none      &mt CARET ASTRK                 &kp FSLH                            &kp PLUS                        &kp MINUS                      &mt COLON SEMICOLON
+&trans    &kp N0       &kp N7  &kp N8      &kp N9     &kp PERCENT       &kp C_MUTE           &none         &none      &mt LESS_THAN LEFT_PARENTHESIS  &mt GREATER_THAN RIGHT_PARENTHESIS  &mt LEFT_BRACE LEFT_BRACKET     &mt RIGHT_BRACE RIGHT_BRACKET  &none
+                               &sk LSHIFT  &kp SPACE  &mt COMMA PERIOD                                     &none      &none                           &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -409,10 +409,10 @@
         nav+hot {
             label = "nav+hot";
             bindings = <
-&mt LC(DELETE) DELETE        &media     &mcro_na         &kp UP           &mcro_2025       &none                                       &trans         &none      &none           &mmv MOVE_UP    &none            &none      &none
-&mt LC(BACKSPACE) BACKSPACE  &kp LC(A)  &kp LEFT         &kp DOWN         &kp RIGHT        &actIve_directory 0 0                &none  &none   &none  &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp RCLK  &kp RGUI
-&kp LGUI                     &kp LC(F)  &mt LG(V) LC(V)  &mt LC(X) LC(C)  &mt LC(Y) LC(Z)  &none                  &bt BT_CLR           &trans         &none      &mt HOME PG_UP  &mt END PG_DN   &sk RSHFT        &sk RCTRL  &none
-                                                         &none            &none            &none                                                      &mkp LCLK  &mcro_2Mclk     &kp RG(RS(D))
+&mt LC(DELETE) DELETE        &media     &mcro_na         &kp UP           &mcro_2025       &none                                       &none         &none      &none           &mmv MOVE_UP    &none            &none      &none
+&mt LC(BACKSPACE) BACKSPACE  &kp LC(A)  &kp LEFT         &kp DOWN         &kp RIGHT        &actIve_directory 0 0                &none  &none  &none  &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp RCLK  &kp RGUI
+&kp LGUI                     &kp LC(F)  &mt LG(V) LC(V)  &mt LC(X) LC(C)  &mt LC(Y) LC(Z)  &none                  &bt BT_CLR           &none         &none      &mt HOME PG_UP  &mt END PG_DN   &sk RSHFT        &sk RCTRL  &none
+                                                         &none            &none            &none                                                     &mkp LCLK  &mcro_2Mclk     &kp RG(RS(D))
             >;
 
             sensor-bindings = <&bt_loop>;
@@ -421,10 +421,10 @@
         steno {
             label = "steno";
             bindings = <
-&trans      &none      &steno_sw  &steno_my  &none  &none                          &trans          &none         &steno_fl  &steno_ac  &steno_ou   &none      &none
-&none       &steno_ry  &steno_ys  &steno_ty  &none  &none                  &trans  &trans  &trans  &none         &steno_fe  &steno_af  &steno_ing  &steno_ef  &none
-&sk LSHIFT  &none      &none      &steno_gm  &none  &none         &none            &trans          &none         &steno_lf  &steno_ck  &steno_ion  &steno_ov  &sk RSHIFT
-                                  &none      &none  &kp LC(BSPC)                                   &kp RC(BSPC)  &none      &none
+&trans      &none      &steno_sw  &steno_my  &none  &none                         &none         &none         &steno_fl  &steno_ac  &steno_ou   &none      &none
+&none       &steno_ry  &steno_ys  &steno_ty  &none  &none                  &none  &none  &none  &none         &steno_fe  &steno_af  &steno_ing  &steno_ef  &none
+&sk LSHIFT  &none      &none      &steno_gm  &none  &none         &none           &none         &none         &steno_lf  &steno_ck  &steno_ion  &steno_ov  &sk RSHIFT
+                                  &none      &none  &kp LC(BSPC)                                &kp RC(BSPC)  &none      &none
             >;
 
             sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
@@ -433,10 +433,10 @@
         lazy {
             label = "lazy";
             bindings = <
-&none  &none     &none    &lazy_m   &none    &lazy_exe                   &trans          &none      &steno_fa  &lazy_ca    &lazy_c     &none      &none
-&none  &lazy_re  &lazy_s  &lazy_nt  &none    &none               &trans  &trans  &trans  &none      &none      &kp AT      &lazy_iest  &lazy_con  &none
-&none  &none     &none    &none     &lazy_d  &none      &to 5            &trans          &none      &lazy_ll   &lazy_like  &lazy_ious  &lazy_ve   &none
-                          &trans    &none    &lazy_cmm                                   &lazy_eve  &none      &none
+&none  &none     &none    &lazy_m   &none    &lazy_exe                  &none         &none      &steno_fa  &lazy_ca    &lazy_c     &none      &none
+&none  &lazy_re  &lazy_s  &lazy_nt  &none    &none               &none  &none  &none  &none      &none      &kp AT      &lazy_iest  &lazy_con  &none
+&none  &none     &none    &none     &lazy_d  &none      &to 5           &none         &none      &lazy_ll   &lazy_like  &lazy_ious  &lazy_ve   &none
+                          &trans    &none    &lazy_cmm                                &lazy_eve  &none      &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -445,10 +445,10 @@
         Gaming {
             label = "gaming";
             bindings = <
-&mt LGUI TAB  &kp E  &kp Q  &kp W     &kp R      &kp T                   &trans          &none  &none  &none  &none  &none  &none
-&kp H         &kp G  &kp A  &kp S     &kp D      &kp F           &trans  &trans  &trans  &none  &none  &none  &none  &none  &none
-&kp P         &kp M  &kp Z  &kp X     &kp C      &kp V  &to 0            &trans          &none  &none  &none  &none  &none  &none
-                            &kp LALT  &kp SPACE  &kp B                                   &none  &none  &none
+&mt LGUI TAB  &kp E  &kp Q  &kp W     &kp R  &kp T                      &none         &none  &none  &none  &none  &none  &none
+&kp LSHFT     &kp G  &kp A  &kp S     &kp D  &kp F               &none  &none  &none  &none  &none  &none  &none  &none  &none
+&kp P         &kp M  &kp Z  &kp X     &kp C  &kp V      &to 0           &none         &none  &none  &none  &none  &none  &none
+                            &kp LALT  &kp B  &kp SPACE                                &none  &none  &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
