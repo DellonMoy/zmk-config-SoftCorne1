@@ -6,7 +6,7 @@ layers:
   - M
   - {t: P, h: PRINTSCREEN}
   - X
-  - $$mdi:arrow-up-bold$$
+  - {t: steno, h: '$$mdi:gesture-tap-hold$$'}
   - Q
   - F
   - C
@@ -19,9 +19,9 @@ layers:
   - {t: T, h: '$$mdi:apple-keyboard-control$$'}
   - {t: H, h: '$$mdi:apple-keyboard-shift$$'}
   - B
-  - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:arrow-right-bold$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: _, h: '~'}
   - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
@@ -35,7 +35,7 @@ layers:
   - D
   - {t: ., h: '&'}
   - {t: Ctl+0, s: Ctl+)}
-  - $$mdi:arrow-down-bold$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Z
   - L
   - K
@@ -153,7 +153,7 @@ layers:
   - '&steno_my'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&steno_fl'
   - '&steno_ac'
@@ -190,7 +190,7 @@ layers:
   - '&steno_ov'
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
   - {t: 'Ctl+$$mdi:backspace$$', type: backspace}
   - {t: 'Ctl+$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
@@ -246,10 +246,10 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   gaming:
   - {t: '$$mdi:keyboard-tab$$', h: LGUI}
-  - E
+  - F
   - Q
   - W
-  - R
+  - E
   - T
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -263,7 +263,7 @@ layers:
   - A
   - S
   - D
-  - F
+  - R
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
