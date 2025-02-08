@@ -388,7 +388,7 @@
 &kp TAB    &mt QUESTION EXCL  &kp W           &kp M          &mt PRINTSCREEN P  &kp X                                          &kp UP_ARROW             &kp Q            &kp F              &kp C               &kp U            &kp J            &mt F2 F5
 &sl 4      &mt LEFT_GUI R     &mt LEFT_ALT S  &mt LCTRL T    &mt LEFT_SHIFT H   &kp B                          &kp LEFT_ARROW  &none         &kp RIGHT  &mt TILDE UNDER  &mt RIGHT_SHIFT N  &mt RCTRL A         &mt RIGHT_ALT I  &mt RIGHT_GUI O  &sl 4
 &kp ENTER  &mt AT Y           &key_repeat     &kp G          &kp D              &mt AMPS PERIOD  &kp LC(N0)                    &kp DOWN                 &kp Z            &kp L              &kp K               &key_repeat      &kp V            &kp ENTER
-                                              &mt F4 ESCAPE  &sl 3              &lt 2 SPACE                                                             &lt 1 E          &sl 3              &kp LA(LC(DELETE))
+                                              &mt F4 ESCAPE  &lt 2 SPACE        &sl 3                                                                   &sl 3            &lt 1 E            &kp LA(LC(DELETE))
             >;
 
             sensor-bindings = <&inc_dec_kp LC(EQUAL) LC(MINUS)>;
@@ -421,10 +421,10 @@
         steno {
             label = "steno";
             bindings = <
-&trans      &none      &steno_sw  &steno_my  &none  &none                          &trans          &none         &steno_fl  &steno_ac  &steno_ou   &none      &none
-&none       &steno_ry  &steno_ys  &steno_ty  &none  &none                  &trans  &trans  &trans  &none         &steno_fe  &steno_af  &steno_ing  &steno_ef  &none
-&sk LSHIFT  &none      &none      &steno_gm  &none  &none         &none            &trans          &none         &steno_lf  &steno_ck  &steno_ion  &steno_ov  &sk RSHIFT
-                                  &none      &none  &kp LC(BSPC)                                   &kp RC(BSPC)  &none      &none
+&trans      &none      &steno_sw  &steno_my  &none         &none                   &trans          &none  &steno_fl     &steno_ac  &steno_ou   &none      &none
+&none       &steno_ry  &steno_ys  &steno_ty  &none         &none           &trans  &trans  &trans  &none  &steno_fe     &steno_af  &steno_ing  &steno_ef  &none
+&sk LSHIFT  &none      &none      &steno_gm  &none         &none  &none            &trans          &none  &steno_lf     &steno_ck  &steno_ion  &steno_ov  &sk RSHIFT
+                                  &none      &kp LC(BSPC)  &none                                   &none  &kp RC(BSPC)  &none
             >;
 
             sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
@@ -433,10 +433,10 @@
         lazy {
             label = "lazy";
             bindings = <
-&none  &none     &none    &lazy_m   &none    &lazy_exe                   &trans          &none      &steno_fa  &lazy_ca    &lazy_c     &none      &none
-&none  &lazy_re  &lazy_s  &lazy_nt  &none    &none               &trans  &trans  &trans  &none      &none      &kp AT      &lazy_iest  &lazy_con  &none
-&none  &none     &none    &none     &lazy_d  &none      &to 5            &trans          &none      &lazy_ll   &lazy_like  &lazy_ious  &lazy_ve   &none
-                          &trans    &none    &lazy_cmm                                   &lazy_eve  &none      &none
+&none  &none     &none    &lazy_m   &none      &lazy_exe                   &trans          &none  &steno_fa  &lazy_ca    &lazy_c     &none      &none
+&none  &lazy_re  &lazy_s  &lazy_nt  &none      &none               &trans  &trans  &trans  &none  &none      &kp AT      &lazy_iest  &lazy_con  &none
+&none  &none     &none    &none     &lazy_d    &none      &to 5            &trans          &none  &lazy_ll   &lazy_like  &lazy_ious  &lazy_ve   &none
+                          &trans    &lazy_cmm  &none                                       &none  &lazy_eve  &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
