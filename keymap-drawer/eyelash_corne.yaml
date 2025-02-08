@@ -33,10 +33,10 @@ layers:
   - '&key_repeat'
   - G
   - D
-  - Z
+  - {t: ., h: '&'}
   - {t: Ctl+0, s: Ctl+)}
   - $$mdi:arrow-down-bold$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Z
   - L
   - K
   - '&key_repeat'
@@ -161,11 +161,11 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&steno_ry'
   - '&steno_ys'
   - '&steno_ty'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: ., h: '&'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -176,7 +176,7 @@ layers:
   - '&steno_ef'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
-  - '&steno_ry'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&steno_gm'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
