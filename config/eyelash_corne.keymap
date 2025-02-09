@@ -70,6 +70,13 @@
             #sensor-binding-cells = <0>;
             bindings = <&bt BT_NXT>, <&bt BT_PRV>;
         };
+
+        rgb_type: rgb_type {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "RGB_TYPE";
+            #sensor-binding-cells = <0>;
+            bindings = <&rgb_ug RGB_EFF>, <&rgb_ug RGB_EFR>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -439,13 +446,13 @@
                           &trans    &none    &lazy_cmm                                          &lazy_eve  &none      &none
             >;
 
-            sensor-bindings = <&rgb_encoder>;
+            sensor-bindings = <&rgb_type>;
         };
 
         Gaming {
             label = "gaming";
             bindings = <
-&mt LGUI TAB  &kp F  &kp Q  &kp W     &kp E  &kp T                      &none         &none  &none  &none  &none  &none  &none
+&mt LGUI TAB  &kp F  &kp Q  &kp W     &kp E  &kp T                      &to 0         &none  &none  &none  &none  &none  &none
 &kp LSHFT     &kp G  &kp A  &kp S     &kp D  &kp R               &none  &none  &none  &none  &none  &none  &none  &none  &none
 &kp P         &kp M  &kp Z  &kp X     &kp C  &kp V      &to 0           &none         &none  &none  &none  &none  &none  &none
                             &kp LALT  &kp B  &kp SPACE                                &none  &none  &none
