@@ -202,7 +202,7 @@ layers:
   - '&lazy_m'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&lazy_exe'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: gaming, h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&steno_fa'
   - '&lazy_ca'
@@ -230,7 +230,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&lazy_d'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: gaming, h: toggle}
+  - RGB TOG
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&lazy_ll'
