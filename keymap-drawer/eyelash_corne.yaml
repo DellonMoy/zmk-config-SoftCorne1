@@ -251,7 +251,7 @@ layers:
   - W
   - E
   - T
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: alpha, h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
