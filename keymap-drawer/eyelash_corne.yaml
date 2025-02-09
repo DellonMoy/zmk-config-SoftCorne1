@@ -1,16 +1,16 @@
 layers:
   alpha:
   - $$mdi:keyboard-tab$$
-  - {t: '!', h: '?'}
+  - X
   - W
   - M
   - {t: P, h: PRINTSCREEN}
-  - X
+  - Z
   - {t: steno, h: '$$mdi:gesture-tap-hold$$'}
   - Q
   - F
-  - C
   - U
+  - Y
   - J
   - {t: F5, h: F2}
   - {t: lazy, h: '$$mdi:gesture-tap-hold$$'}
@@ -29,24 +29,24 @@ layers:
   - {t: O, h: RIGHT GUI}
   - {t: lazy, h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: Y, h: '@'}
   - '&key_repeat'
+  - C
   - G
   - D
   - {t: ., h: '&'}
   - {t: Ctl+0, s: Ctl+)}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Z
+  - {t: '!', h: '?'}
   - L
   - K
-  - '&key_repeat'
   - V
+  - '&key_repeat'
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-esc$$', h: F4}
-  - {t: steno, h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:keyboard-space$$', h: nav+hot}
-  - {t: E, h: num+sym}
   - {t: steno, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: steno, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: E, h: num+sym}
   - Alt+Ctl+$$mdi:backspace-reverse-outline$$
   num+sym:
   - $$mdi:backspace-reverse-outline$$
@@ -94,8 +94,8 @@ layers:
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - $$mdi:keyboard-space$$
   - {t: ., h: ','}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   nav+hot:
   - {t: '$$mdi:backspace-reverse-outline$$', h: 'Ctl+$$mdi:backspace-reverse-outline$$'}
@@ -141,10 +141,10 @@ layers:
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - $$mdi:mouse-left-click-outline$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&mcro_2Mclk'
+  - $$mdi:mouse-left-click-outline$$
   - Gui+Sft+D
   steno:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -172,8 +172,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&steno_fe'
   - '&steno_af'
-  - '&steno_ing'
   - '&steno_ef'
+  - '&steno_ov'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -186,14 +186,14 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&steno_lf'
   - '&steno_ck'
-  - '&steno_ion'
-  - '&steno_ov'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
-  - {t: 'Ctl+$$mdi:backspace$$', type: backspace}
   - {t: 'Ctl+$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
+  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
+  - {t: 'Ctl+$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   lazy:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -201,12 +201,12 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&lazy_m'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&lazy_exe'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: gaming, h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&steno_fa'
-  - '&lazy_ca'
-  - '&lazy_c'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
@@ -221,8 +221,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '@'
-  - '&lazy_iest'
-  - '&lazy_con'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -235,13 +235,13 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&lazy_ll'
   - '&lazy_like'
-  - '&lazy_ious'
   - '&lazy_ve'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
   - '&lazy_cmm'
-  - '&lazy_eve'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   gaming:
@@ -279,7 +279,7 @@ layers:
   - X
   - C
   - V
-  - {t: alpha, h: toggle}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
