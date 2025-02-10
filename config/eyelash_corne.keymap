@@ -214,11 +214,11 @@
             label = "LAZY_LL";
         };
 
-        lazy_ve: lazy_ve {
+        lazy_v: lazy_v {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp SQT &kp V &kp E &kp SPACE>;
-            label = "LAZY_VE";
+            label = "LAZY_V";
         };
 
         lazy_cmm: lazy_cmm {
@@ -365,7 +365,7 @@
             bindings = <
 &none  &none  &none     &lazy_m  &none      &none                            &to 5         &none  &none     &lazy_au  &none      &none  &none
 &none  &none  &lazy_re  &lazy_s  &lazy_t    &none                     &none  &none  &none  &none  &lazy_fa  &kp AT    &lazy_eve  &none  &none
-&none  &none  &lazy_c   &none    &lazy_d    &none  &rgb_ug RGB_TOG           &none         &none  &lazy_ll  &lazy_ke  &lazy_ve   &none  &none
+&none  &none  &lazy_c   &none    &lazy_d    &none  &rgb_ug RGB_TOG           &none         &none  &lazy_ll  &lazy_ke  &lazy_v    &none  &none
                         &trans   &lazy_cmm  &none                                          &none  &none     &none
             >;
 
