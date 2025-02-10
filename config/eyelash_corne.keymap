@@ -137,20 +137,6 @@
             wait-ms = <0>;
         };
 
-        steno_ac: steno_ac {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp A &kp C>;
-            label = "STENO_AC";
-        };
-
-        steno_ck: steno_ck {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp C &kp K>;
-            label = "STENO_CK";
-        };
-
         steno_fl: steno_fl {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -214,11 +200,11 @@
             label = "LAZY_S";
         };
 
-        lazy_nt: lazy_nt {
+        lazy_t: lazy_t {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N &kp SQT &kp T &kp SPACE>;
-            label = "LAZY_NT";
+            bindings = <&kp SQT &kp T &kp SPACE>;
+            label = "LAZY_T";
         };
 
         lazy_ll: lazy_ll {
@@ -242,25 +228,11 @@
             label = "LAZY_CMM";
         };
 
-        steno_ing: steno_ing {
+        lazy_ke: lazy_ke {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp I &kp N &kp G>;
-            label = "STENO_ING";
-        };
-
-        steno_ion: steno_ion {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp I &kp O &kp N>;
-            label = "STENO_ION";
-        };
-
-        lazy_like: lazy_like {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp L &kp I &kp K &kp E>;
-            label = "LAZY_LIKE";
+            bindings = <&kp K &kp E>;
+            label = "LAZY_KE";
         };
 
         lazy_exe: lazy_exe {
@@ -270,11 +242,11 @@
             label = "LAZY_EXE";
         };
 
-        steno_fa: steno_fa {
+        lazy_fa: lazy_fa {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp F &kp A>;
-            label = "STENO_FA";
+            label = "LAZY_FA";
         };
 
         lazy_m: lazy_m {
@@ -282,34 +254,6 @@
             #binding-cells = <0>;
             bindings = <&kp SQT &kp M &kp SPACE>;
             label = "LAZY_M";
-        };
-
-        steno_ry: steno_ry {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp R &kp Y>;
-            label = "STENO_RY";
-        };
-
-        steno_ys: steno_ys {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Y &kp S>;
-            label = "STENO_YS";
-        };
-
-        steno_ty: steno_ty {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp T &kp Y>;
-            label = "STENO_TY";
-        };
-
-        steno_my: steno_my {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp M &kp Y>;
-            label = "STENO_MY";
         };
 
         steno_ov: steno_ov {
@@ -326,13 +270,6 @@
             label = "STENO_GM";
         };
 
-        lazy_ca: lazy_ca {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp C &kp A>;
-            label = "LAZY_CA";
-        };
-
         lazy_d: lazy_d {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -340,11 +277,18 @@
             label = "LAZY_D";
         };
 
-        lazy_ious: lazy_ious {
+        steno_au: steno_au {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp I &kp O &kp U &kp S>;
-            label = "LAZY_IOUS";
+            bindings = <&kp A &kp U>;
+            label = "STENO_AU";
+        };
+
+        lazy_eve: lazy_eve {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp E &kp V &kp E>;
+            label = "LAZY_EVE";
         };
     };
 
@@ -353,7 +297,7 @@
 
         cmbo_cap {
             bindings = <&caps_word>;
-            key-positions = <43 46>;
+            key-positions = <44 45>;
             layers = <0>;
         };
     };
@@ -400,10 +344,10 @@
         steno {
             label = "steno";
             bindings = <
-&trans      &none      &steno_sw  &steno_my  &none         &none                  &none         &none  &steno_fl     &steno_ac  &steno_ou  &none      &none
-&none       &steno_ry  &steno_ys  &steno_ty  &none         &none           &none  &none  &none  &none  &steno_fe     &steno_af  &steno_ef  &steno_ov  &none
-&sk LSHIFT  &none      &none      &steno_gm  &none         &none  &none           &none         &none  &steno_lf     &steno_ck  &none      &none      &sk RSHIFT
-                                  &none      &kp LC(BSPC)  &none                                &none  &kp RC(BSPC)  &none
+&trans      &none  &steno_sw  &none      &none         &none                  &none         &none  &steno_fl     &none      &steno_ou  &none      &none
+&none       &none  &none      &none      &none         &none           &none  &none  &none  &none  &steno_fe     &steno_af  &steno_ef  &steno_ov  &none
+&sk LSHIFT  &none  &none      &steno_gm  &none         &none  &none           &none         &none  &steno_lf     &none      &none      &none      &sk RSHIFT
+                              &none      &kp LC(BSPC)  &none                                &none  &kp RC(BSPC)  &none
             >;
 
             sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
@@ -412,10 +356,10 @@
         lazy {
             label = "lazy";
             bindings = <
-&none  &none     &none    &lazy_m   &none      &none                            &to 5         &none  &steno_fa  &none       &none     &none  &none
-&none  &lazy_re  &lazy_s  &lazy_nt  &none      &none                     &none  &none  &none  &none  &none      &kp AT      &none     &none  &none
-&none  &none     &none    &none     &lazy_d    &none  &rgb_ug RGB_TOG           &none         &none  &lazy_ll   &lazy_like  &lazy_ve  &none  &none
-                          &trans    &lazy_cmm  &none                                          &none  &none      &none
+&none  &none     &none    &lazy_m  &none      &none                            &to 5         &none  &none     &none     &none      &none  &none
+&none  &lazy_re  &lazy_s  &lazy_t  &none      &none                     &none  &none  &none  &none  &lazy_fa  &kp AT    &lazy_eve  &none  &none
+&none  &none     &none    &none    &lazy_d    &none  &rgb_ug RGB_TOG           &none         &none  &lazy_ll  &lazy_ke  &lazy_ve   &none  &none
+                          &trans   &lazy_cmm  &none                                          &none  &none     &none
             >;
 
             sensor-bindings = <&rgb_type>;
