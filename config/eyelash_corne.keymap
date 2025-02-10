@@ -77,6 +77,17 @@
             #sensor-binding-cells = <0>;
             bindings = <&rgb_ug RGB_EFF>, <&rgb_ug RGB_EFR>;
         };
+
+        sk_tap: sk_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SK_TAP";
+            bindings = <&sk>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            require-prior-idle-ms = <50>;
+            flavor = "tap-preferred";
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -315,10 +326,10 @@
         alpha {
             label = "alpha";
             bindings = <
-&kp TAB    &kp B           &kp W           &kp M          &mt PRINTSCREEN P  &kp Z                                 &sl 3         &kp Q                     &kp F              &kp U               &kp Y            &kp J            &mt F2 F5
-&sl 4      &mt LEFT_GUI H  &mt LEFT_ALT R  &mt LCTRL S    &mt LEFT_SHIFT T   &kp X                          &none  &none  &none  &mt TILDE UNDER           &mt RIGHT_SHIFT N  &mt RCTRL A         &mt RIGHT_ALT I  &mt RIGHT_GUI O  &sl 4
-&kp ENTER  &key_repeat     &kp C           &kp G          &kp D              &mt AMPS PERIOD  &kp LC(N0)           &none         &mt QUESTION EXCLAMATION  &kp L              &kp K               &kp V            &key_repeat      &kp ENTER
-                                           &mt F4 ESCAPE  &lt 2 SPACE        &sl 3                                               &sl 3                     &lt 1 E            &kp LA(LC(DELETE))
+&kp TAB    &kp B           &kp W               &kp M            &mt PRINTSCREEN P     &kp Z                                 &sl 3         &kp Q                     &kp F                  &kp U               &kp Y                &kp J            &mt F2 F5
+&sl 4      &mt LEFT_GUI H  &sk_tap LEFT_ALT R  &sk_tap LCTRL S  &sk_tap LEFT_SHIFT T  &kp X                          &none  &none  &none  &mt TILDE UNDER           &sk_tap RIGHT_SHIFT N  &sk_tap RCTRL A     &sk_tap RIGHT_ALT I  &mt RIGHT_GUI O  &sl 4
+&kp ENTER  &key_repeat     &kp C               &kp G            &kp D                 &mt AMPS PERIOD  &kp LC(N0)           &none         &mt QUESTION EXCLAMATION  &kp L                  &kp K               &kp V                &key_repeat      &kp ENTER
+                                               &mt F4 ESCAPE    &lt 2 SPACE           &sl 3                                               &sl 3                     &lt 1 E                &kp LA(LC(DELETE))
             >;
 
             sensor-bindings = <&inc_dec_kp LC(EQUAL) LC(MINUS)>;
