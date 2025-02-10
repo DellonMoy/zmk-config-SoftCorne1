@@ -235,7 +235,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&lazy_ll'
   - '&lazy_ke'
-  - '&lazy_ve'
+  - '&lazy_v'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
