@@ -210,10 +210,10 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&lazy_re'
+  - '&lazy_r'
   - '&lazy_s'
   - '&lazy_t'
+  - '&lazy_be'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -233,7 +233,7 @@ layers:
   - RGB TOG
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&lazy_ll'
+  - '&lazy_L'
   - '&lazy_ke'
   - '&lazy_v'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
