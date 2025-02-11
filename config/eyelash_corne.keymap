@@ -308,6 +308,27 @@
             bindings = <&kp C &kp SQT>;
             label = "LAZY_C";
         };
+
+        steno_ua: steno_ua {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp U &kp A>;
+            label = "STENO_UA";
+        };
+
+        lazy_rb: lazy_rb {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp R &kp B>;
+            label = "LAZY_RB";
+        };
+
+        lazy_br: lazy_br {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp B &kp R>;
+            label = "LAZY_BR";
+        };
     };
 
     combos {
@@ -327,7 +348,7 @@
             label = "alpha";
             bindings = <
 &kp TAB    &kp B           &kp W               &kp M            &mt PRINTSCREEN P     &kp Z                                 &sl 3         &kp Q                     &kp F                  &kp U               &kp Y                &kp J            &mt F2 F5
-&sl 4      &mt LEFT_GUI H  &sk_tap LEFT_ALT R  &sk_tap LCTRL S  &sk_tap LEFT_SHIFT T  &kp X                          &none  &none  &none  &mt TILDE UNDER           &sk_tap RIGHT_SHIFT N  &sk_tap RCTRL A     &sk_tap RIGHT_ALT I  &mt RIGHT_GUI O  &sl 4
+&sl 4      &mt LEFT_GUI R  &sk_tap LEFT_ALT S  &sk_tap LCTRL T  &sk_tap LEFT_SHIFT H  &kp X                          &none  &none  &none  &mt TILDE UNDER           &sk_tap RIGHT_SHIFT N  &sk_tap RCTRL A     &sk_tap RIGHT_ALT I  &mt RIGHT_GUI O  &sl 4
 &kp ENTER  &key_repeat     &kp C               &kp G            &kp D                 &mt AMPS PERIOD  &kp LC(N0)           &none         &mt QUESTION EXCLAMATION  &kp L                  &kp K               &kp V                &key_repeat      &kp ENTER
                                                &mt F4 ESCAPE    &lt 2 SPACE           &sl 3                                               &sl 3                     &lt 1 E                &kp LA(LC(DELETE))
             >;
@@ -362,10 +383,10 @@
         steno {
             label = "steno";
             bindings = <
-&trans      &none  &none      &none      &none         &none                  &none         &none  &steno_fl     &none      &steno_ou  &none      &none
-&none       &none  &steno_sw  &none      &none         &none           &none  &none  &none  &none  &steno_fe     &steno_af  &steno_ef  &steno_ov  &none
-&sk LSHIFT  &none  &none      &steno_gm  &none         &none  &none           &none         &none  &steno_lf     &none      &none      &none      &sk RSHIFT
-                              &none      &kp LC(BSPC)  &none                                &none  &kp RC(BSPC)  &none
+&trans      &lazy_rb  &none      &none      &none         &none                  &none         &none  &steno_fl     &steno_ua  &steno_ou  &none      &none
+&none       &lazy_br  &steno_sw  &none      &none         &none           &none  &none  &none  &none  &steno_fe     &steno_af  &steno_ef  &steno_ov  &none
+&sk LSHIFT  &none     &none      &steno_gm  &none         &none  &none           &none         &none  &steno_lf     &none      &none      &none      &sk RSHIFT
+                                 &none      &kp LC(BSPC)  &none                                &none  &kp RC(BSPC)  &none
             >;
 
             sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
