@@ -354,10 +354,10 @@
         alpha {
             label = "alpha";
             bindings = <
-&kp TAB    &kp B           &kp W               &kp M            &mt PRINTSCREEN P     &kp Z                                 &sl 3         &kp Q                     &kp F                  &kp U               &kp Y                &kp J            &mt F2 F5
-&sl 4      &mt LEFT_GUI R  &sk_tap LEFT_ALT S  &sk_tap LCTRL T  &sk_tap LEFT_SHIFT H  &kp X                          &none  &none  &none  &mt TILDE UNDER           &sk_tap RIGHT_SHIFT N  &sk_tap RCTRL A     &sk_tap RIGHT_ALT I  &mt RIGHT_GUI O  &sl 4
-&kp ENTER  &key_repeat     &kp C               &kp G            &kp D                 &mt AMPS PERIOD  &kp LC(N0)           &none         &mt QUESTION EXCLAMATION  &kp L                  &kp K               &kp V                &key_repeat      &kp ENTER
-                                               &mt F4 ESCAPE    &lt 2 SPACE           &sl 3                                               &sl 3                     &lt 1 E                &kp LA(LC(DELETE))
+&kp TAB    &kp B           &kp W               &kp M            &mt PRINTSCREEN P     &kp Z                       &sl 3         &kp Q                     &kp F                  &kp U               &kp Y                &kp J            &mt F2 F5
+&sl 4      &mt LEFT_GUI R  &sk_tap LEFT_ALT S  &sk_tap LCTRL T  &sk_tap LEFT_SHIFT H  &kp X                &none  &none  &none  &mt TILDE UNDER           &sk_tap RIGHT_SHIFT N  &sk_tap RCTRL A     &sk_tap RIGHT_ALT I  &mt RIGHT_GUI O  &sl 4
+&kp ENTER  &key_repeat     &kp C               &kp G            &kp D                 &none  &kp LC(N0)           &none         &mt QUESTION EXCLAMATION  &kp L                  &kp K               &kp V                &key_repeat      &kp ENTER
+                                               &mt F4 ESCAPE    &lt 2 SPACE           &sl 3                                     &sl 3                     &lt 1 E                &kp LA(LC(DELETE))
             >;
 
             sensor-bindings = <&inc_dec_kp LC(EQUAL) LC(MINUS)>;
@@ -367,7 +367,7 @@
             label = "num+sym";
             bindings = <
 &kp DEL   &kp EQUAL    &kp N1  &kp N2      &kp N3     &kp DOLLAR                             &none         &kp GRAVE  &mt PIPE BSLH                   &kp HASH                            &mt DOUBLE_QUOTES SINGLE_QUOTE  &none                          &sk RCTRL
-&kp BSPC  &key_repeat  &kp N4  &kp N5      &kp N6     &kp N0                          &none  &none  &none  &none      &mt CARET ASTRK                 &kp FSLH                            &kp PLUS                        &kp MINUS                      &mt COLON SEMICOLON
+&kp BSPC  &key_repeat  &kp N4  &kp N5      &kp N6     &kp N0                          &none  &none  &none  &none      &mt CARET ASTRK                 &mt AT FSLH                         &mt AMPS PLUS                   &kp MINUS                      &mt COLON SEMICOLON
 &trans    &kp N0       &kp N7  &kp N8      &kp N9     &kp PERCENT       &kp C_MUTE           &none         &none      &mt LESS_THAN LEFT_PARENTHESIS  &mt GREATER_THAN RIGHT_PARENTHESIS  &mt LEFT_BRACE LEFT_BRACKET     &mt RIGHT_BRACE RIGHT_BRACKET  &none
                                &sk LSHIFT  &kp SPACE  &mt COMMA PERIOD                                     &none      &none                           &none
             >;
