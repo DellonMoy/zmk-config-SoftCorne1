@@ -33,7 +33,7 @@ layers:
   - C
   - G
   - D
-  - {t: ., h: '&'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: Ctl+0, s: Ctl+)}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '!', h: '?'}
@@ -73,8 +73,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '*', h: ^}
-  - {t: /, s: '?'}
-  - +
+  - {t: /, h: '@', s: '?'}
+  - {t: +, h: '&'}
   - {t: '-', s: _}
   - {t: ;, h: ':', s: ':'}
   - {t: '$$mdi:transfer$$', type: trans}
