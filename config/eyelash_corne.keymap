@@ -3,6 +3,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/pointing.h>
@@ -336,6 +337,13 @@
             bindings = <&kp B &kp E>;
             label = "LAZY_BE";
         };
+
+        alt255: alt255 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp KP_NUM &kt LEFT_ALT &kp KP_N2 &kp KP_N5 &kp KP_N5 &kt LEFT_ALT &kp KP_NUM>;
+            label = "ALT255";
+        };
     };
 
     combos {
@@ -402,7 +410,7 @@
         lazy {
             label = "lazy";
             bindings = <
-&none  &none    &none    &lazy_m  &none      &none                            &to 5         &none  &none     &lazy_au  &none    &none      &none
+&none  &alt255  &none    &lazy_m  &none      &none                            &to 5         &none  &none     &lazy_au  &none    &none      &none
 &none  &lazy_r  &lazy_s  &lazy_t  &lazy_be   &none                     &none  &none  &none  &none  &lazy_fa  &kp AT    &none    &lazy_eve  &none
 &none  &none    &lazy_c  &none    &lazy_d    &none  &rgb_ug RGB_TOG           &none         &none  &lazy_L   &lazy_ke  &lazy_v  &none      &none
                          &trans   &lazy_cmm  &none                                          &none  &none     &none
