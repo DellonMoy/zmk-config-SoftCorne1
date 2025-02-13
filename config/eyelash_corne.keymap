@@ -285,7 +285,7 @@
         lazy_d: lazy_d {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SQT &kp D>;
+            bindings = <&kp SQT &kp D &kp SPACE>;
             label = "LAZY_D";
         };
 
