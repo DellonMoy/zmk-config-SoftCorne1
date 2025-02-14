@@ -374,10 +374,10 @@
         num+sym {
             label = "num+sym";
             bindings = <
-&kp DEL   &kp EQUAL    &kp N1  &kp N2      &kp N3     &kp DOLLAR                             &none         &kp GRAVE  &mt PIPE BSLH                   &kp HASH                            &mt DOUBLE_QUOTES SINGLE_QUOTE  &none                          &sk RCTRL
-&kp BSPC  &key_repeat  &kp N4  &kp N5      &kp N6     &kp N0                          &none  &none  &none  &none      &mt CARET ASTRK                 &mt AT FSLH                         &mt AMPS PLUS                   &kp MINUS                      &mt COLON SEMICOLON
-&trans    &kp N0       &kp N7  &kp N8      &kp N9     &kp PERCENT       &kp C_MUTE           &none         &none      &mt LESS_THAN LEFT_PARENTHESIS  &mt GREATER_THAN RIGHT_PARENTHESIS  &mt LEFT_BRACE LEFT_BRACKET     &mt RIGHT_BRACE RIGHT_BRACKET  &none
-                               &sk LSHIFT  &kp SPACE  &mt COMMA PERIOD                                     &none      &none                           &none
+&kp DEL   &kp EQUAL    &kp N1  &kp N2      &kp N3           &kp DOLLAR                             &none         &kp GRAVE  &mt PIPE BSLH                   &kp HASH                            &mt DOUBLE_QUOTES SINGLE_QUOTE  &none                          &sk RCTRL
+&kp BSPC  &key_repeat  &kp N4  &kp N5      &kp N6           &kp N0                          &none  &none  &none  &none      &mt CARET ASTRK                 &mt AT FSLH                         &mt AMPS PLUS                   &kp MINUS                      &mt COLON SEMICOLON
+&trans    &kp N0       &kp N7  &kp N8      &kp N9           &kp PERCENT       &kp C_MUTE           &none         &none      &mt LESS_THAN LEFT_PARENTHESIS  &mt GREATER_THAN RIGHT_PARENTHESIS  &mt LEFT_BRACE LEFT_BRACKET     &mt RIGHT_BRACE RIGHT_BRACKET  &none
+                               &sk LSHIFT  &mt LCTRL SPACE  &mt COMMA PERIOD                                     &none      &none                           &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
