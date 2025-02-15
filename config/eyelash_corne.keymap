@@ -351,6 +351,13 @@
             bindings = <&kp B &kp E>;
             label = "STENO_BE";
         };
+
+        steno_sc: steno_sc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp C>;
+            label = "STENO_SC";
+        };
     };
 
     combos {
@@ -407,7 +414,7 @@
             bindings = <
 &trans      &lazy_rb  &none      &none      &none         &none                  &none         &none  &steno_fl     &steno_ua  &steno_ou  &none      &none
 &steno_be   &lazy_br  &steno_sw  &none      &none         &none           &none  &none  &none  &none  &steno_fe     &steno_af  &steno_ef  &steno_ov  &none
-&sk LSHIFT  &none     &none      &steno_gm  &none         &none  &none           &none         &none  &steno_lf     &none      &none      &none      &sk RSHIFT
+&sk LSHIFT  &none     &steno_sc  &steno_gm  &none         &none  &none           &none         &none  &steno_lf     &none      &none      &none      &sk RSHIFT
                                  &none      &kp LC(BSPC)  &none                                &none  &kp RC(BSPC)  &none
             >;
 
