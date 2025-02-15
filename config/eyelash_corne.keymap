@@ -388,7 +388,7 @@
         num+sym {
             label = "num+sym";
             bindings = <
-&kp DEL   &kp EQUAL    &kp N1  &kp N2      &kp N3           &kp DOLLAR                             &none         &kp GRAVE  &mt PIPE BSLH                   &kp HASH                            &mt DOUBLE_QUOTES SINGLE_QUOTE  &none                          &sk RCTRL
+&kp DEL   &kp EQUAL    &kp N1  &kp N2      &kp N3           &kp DOLLAR                             &none         &kp GRAVE  &mt PIPE BSLH                   &kp HASH                            &mt DOUBLE_QUOTES SINGLE_QUOTE  &sk RSHIFT                     &sk RCTRL
 &kp BSPC  &key_repeat  &kp N4  &kp N5      &kp N6           &kp N0                          &none  &none  &none  &none      &mt CARET ASTRK                 &mt AT FSLH                         &mt AMPS PLUS                   &kp MINUS                      &mt COLON SEMICOLON
 &trans    &kp N0       &kp N7  &kp N8      &kp N9           &kp PERCENT       &kp C_MUTE           &none         &none      &mt LESS_THAN LEFT_PARENTHESIS  &mt GREATER_THAN RIGHT_PARENTHESIS  &mt LEFT_BRACE LEFT_BRACKET     &mt RIGHT_BRACE RIGHT_BRACKET  &none
                                &sk LSHIFT  &mt LCTRL SPACE  &mt COMMA PERIOD                                     &none      &none                           &none
@@ -424,10 +424,10 @@
         lazy {
             label = "lazy";
             bindings = <
-&none  &alt255  &none    &lazy_m  &none      &none                                &to 5         &none  &none     &lazy_au  &none    &none      &none
-&none  &lazy_r  &lazy_s  &lazy_t  &lazy_be   &lazy_exe                     &none  &none  &none  &none  &lazy_fa  &kp AT    &none    &lazy_eve  &none
-&none  &none    &lazy_c  &none    &lazy_d    &none      &rgb_ug RGB_TOG           &none         &none  &lazy_L   &lazy_ke  &lazy_v  &none      &none
-                         &trans   &lazy_cmm  &none                                              &none  &none     &none
+&none  &alt255  &none    &lazy_m  &none      &none                                &to 5         &none  &none    &lazy_au  &none    &none      &none
+&none  &lazy_r  &lazy_s  &lazy_t  &lazy_be   &lazy_exe                     &none  &none  &none  &none  &none    &lazy_fa  &none    &lazy_eve  &none
+&none  &none    &lazy_c  &none    &lazy_d    &none      &rgb_ug RGB_TOG           &none         &none  &lazy_L  &lazy_ke  &lazy_v  &none      &none
+                         &trans   &lazy_cmm  &none                                              &none  &none    &none
             >;
 
             sensor-bindings = <&rgb_type>;
