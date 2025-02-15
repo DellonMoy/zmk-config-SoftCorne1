@@ -214,7 +214,7 @@ layers:
   - '&lazy_s'
   - '&lazy_t'
   - '&lazy_be'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&lazy_exe'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
