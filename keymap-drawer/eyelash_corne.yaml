@@ -185,7 +185,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&steno_lf'
-  - '&steno_ck'
+  - '&lazy_ke'
   - '&steno_ve'
   - '&lazy_eve'
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
@@ -234,7 +234,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&lazy_L'
-  - '&lazy_ke'
+  - '&steno_ck'
   - '&lazy_v'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
