@@ -428,7 +428,7 @@
             bindings = <
 &trans      &lazy_rb  &none      &none      &none         &none                  &none         &none  &steno_fl     &steno_ua  &steno_ou  &none      &none
 &steno_be   &lazy_br  &steno_sw  &none      &none         &none           &none  &none  &none  &none  &steno_fe     &steno_af  &steno_ef  &steno_ov  &none
-&sk LSHIFT  &none     &steno_sc  &steno_gm  &none         &none  &none           &none         &none  &steno_lf     &steno_ck  &steno_ve  &lazy_eve  &sk RSHIFT
+&sk LSHIFT  &none     &steno_sc  &steno_gm  &none         &none  &none           &none         &none  &steno_lf     &lazy_ke   &steno_ve  &lazy_eve  &sk RSHIFT
                                  &none      &kp LC(BSPC)  &none                                &none  &kp RC(BSPC)  &none
             >;
 
@@ -438,9 +438,9 @@
         lazy {
             label = "lazy";
             bindings = <
-&none  &alt255  &none    &lazy_m  &none      &none                                &to 5         &none  &none    &lazy_au  &none    &none  &none
-&none  &lazy_r  &lazy_s  &lazy_t  &lazy_be   &lazy_exe                     &none  &none  &none  &none  &none    &lazy_fa  &none    &none  &none
-&none  &none    &lazy_c  &none    &lazy_d    &none      &rgb_ug RGB_TOG           &none         &none  &lazy_L  &lazy_ke  &lazy_v  &none  &none
+&none  &alt255  &none    &lazy_m  &none      &none                                &to 5         &none  &none    &lazy_au   &none    &none  &none
+&none  &lazy_r  &lazy_s  &lazy_t  &lazy_be   &lazy_exe                     &none  &none  &none  &none  &none    &lazy_fa   &none    &none  &none
+&none  &none    &lazy_c  &none    &lazy_d    &none      &rgb_ug RGB_TOG           &none         &none  &lazy_L  &steno_ck  &lazy_v  &none  &none
                          &trans   &lazy_cmm  &none                                              &none  &none    &none
             >;
 
