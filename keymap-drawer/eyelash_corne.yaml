@@ -1,6 +1,6 @@
 layers:
   alpha:
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - B
   - W
   - M
@@ -98,7 +98,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   nav+hot:
-  - {t: '$$mdi:backspace-reverse-outline$$', h: 'Ctl+$$mdi:backspace-reverse-outline$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&media'
   - '&mcro_na'
   - $$mdi:arrow-up-bold$$
@@ -111,7 +111,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:backspace$$', h: 'Ctl+$$mdi:backspace$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Ctl+A
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
@@ -297,3 +297,9 @@ combos:
 - p: [44, 45]
   k: $$mdi:alpha-w-box$$
   l: [alpha]
+- p: [14, 15]
+  k: {t: 'Ctl+$$mdi:backspace$$', type: backspace}
+- p: [1, 2]
+  k: Ctl+$$mdi:backspace-reverse-outline$$
+- p: [13, 14]
+  k: $$mdi:keyboard-tab$$
