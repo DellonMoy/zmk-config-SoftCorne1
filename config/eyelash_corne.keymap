@@ -3,6 +3,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/pointing.h>
@@ -20,18 +21,18 @@
 
  */
 
-#define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
-#define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
+#define ZMK_MOUSE_DEFAULT_MOVE_VAL 1600  // 600
+#define ZMK_MOUSE_DEFAULT_SCRL_VAL 30    // 10
 
 &mt {
     tapping-term-ms = <200>;
     flavor = "tap-preferred";
-    require-prior-idle-ms = <100>;
+    require-prior-idle-ms = <75>;
 };
 
 &lt {
     tapping-term-ms = <200>;
-    require-prior-idle-ms = <100>;
+    require-prior-idle-ms = <75>;
 };
 
 &caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE MINUS N1 N2 N3 N4 N5 N6 N7 N8 N9 N0>; };
@@ -45,9 +46,9 @@
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
 
-        actIve_directory: actIve_directory {
+        act_dir: act_dir {
             compatible = "zmk,behavior-hold-tap";
-            label = "ACTIVE_DIRECTORY";
+            label = "ACT_DIR";
             bindings = <&mcro_sad>, <&mcro_ad>;
 
             #binding-cells = <2>;
@@ -69,6 +70,24 @@
             label = "BT_LOOP";
             #sensor-binding-cells = <0>;
             bindings = <&bt BT_NXT>, <&bt BT_PRV>;
+        };
+
+        rgb_type: rgb_type {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "RGB_TYPE";
+            #sensor-binding-cells = <0>;
+            bindings = <&rgb_ug RGB_EFF>, <&rgb_ug RGB_EFR>;
+        };
+
+        sk_tap: sk_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SK_TAP";
+            bindings = <&sk>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            require-prior-idle-ms = <50>;
+            flavor = "tap-preferred";
         };
     };
 
@@ -130,20 +149,6 @@
             wait-ms = <0>;
         };
 
-        steno_ac: steno_ac {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp A &kp C>;
-            label = "STENO_AC";
-        };
-
-        steno_ck: steno_ck {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp C &kp K>;
-            label = "STENO_CK";
-        };
-
         steno_fl: steno_fl {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -193,11 +198,11 @@
             label = "STENO_SW";
         };
 
-        lazy_re: lazy_re {
+        lazy_r: lazy_r {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp SQT &kp R &kp E &kp SPACE>;
-            label = "LAZY_RE";
+            label = "LAZY_R";
         };
 
         lazy_s: lazy_s {
@@ -207,25 +212,25 @@
             label = "LAZY_S";
         };
 
-        lazy_nt: lazy_nt {
+        lazy_t: lazy_t {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N &kp SQT &kp T &kp SPACE>;
-            label = "LAZY_NT";
+            bindings = <&kp SQT &kp T &kp SPACE>;
+            label = "LAZY_T";
         };
 
-        lazy_ll: lazy_ll {
+        lazy_L: lazy_L {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp SQT &kp L &kp L &kp SPACE>;
-            label = "LAZY_LL";
+            label = "LAZY_L";
         };
 
-        lazy_ve: lazy_ve {
+        lazy_v: lazy_v {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp SQT &kp V &kp E &kp SPACE>;
-            label = "LAZY_VE";
+            label = "LAZY_V";
         };
 
         lazy_cmm: lazy_cmm {
@@ -235,25 +240,11 @@
             label = "LAZY_CMM";
         };
 
-        steno_ing: steno_ing {
+        lazy_ke: lazy_ke {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp I &kp N &kp G>;
-            label = "STENO_ING";
-        };
-
-        steno_ion: steno_ion {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp I &kp O &kp N>;
-            label = "STENO_ION";
-        };
-
-        lazy_like: lazy_like {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp L &kp I &kp K &kp E>;
-            label = "LAZY_LIKE";
+            bindings = <&kp K &kp E>;
+            label = "LAZY_KE";
         };
 
         lazy_exe: lazy_exe {
@@ -263,11 +254,11 @@
             label = "LAZY_EXE";
         };
 
-        steno_fa: steno_fa {
+        lazy_fa: lazy_fa {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp F &kp A>;
-            label = "STENO_FA";
+            label = "LAZY_FA";
         };
 
         lazy_m: lazy_m {
@@ -275,34 +266,6 @@
             #binding-cells = <0>;
             bindings = <&kp SQT &kp M &kp SPACE>;
             label = "LAZY_M";
-        };
-
-        steno_ry: steno_ry {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp R &kp Y>;
-            label = "STENO_RY";
-        };
-
-        steno_ys: steno_ys {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Y &kp S>;
-            label = "STENO_YS";
-        };
-
-        steno_ty: steno_ty {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp T &kp Y>;
-            label = "STENO_TY";
-        };
-
-        steno_my: steno_my {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp M &kp Y>;
-            label = "STENO_MY";
         };
 
         steno_ov: steno_ov {
@@ -319,11 +282,25 @@
             label = "STENO_GM";
         };
 
-        lazy_ca: lazy_ca {
+        lazy_d: lazy_d {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp C &kp A>;
-            label = "LAZY_CA";
+            bindings = <&kp SQT &kp D &kp SPACE>;
+            label = "LAZY_D";
+        };
+
+        lazy_au: lazy_au {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp U>;
+            label = "LAZY_AU";
+        };
+
+        lazy_eve: lazy_eve {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp E &kp V &kp E>;
+            label = "LAZY_EVE";
         };
 
         lazy_c: lazy_c {
@@ -333,11 +310,95 @@
             label = "LAZY_C";
         };
 
-        lazy_d: lazy_d {
+        steno_ua: steno_ua {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SQT &kp D>;
-            label = "LAZY_D";
+            bindings = <&kp U &kp A>;
+            label = "STENO_UA";
+        };
+
+        lazy_rb: lazy_rb {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp R &kp B>;
+            label = "LAZY_RB";
+        };
+
+        lazy_br: lazy_br {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp B &kp R>;
+            label = "LAZY_BR";
+        };
+
+        lazy_be: lazy_be {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp B &kp E>;
+            label = "LAZY_BE";
+        };
+
+        alt255: alt255 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp KP_NUM &kt LEFT_ALT &kp KP_N2 &kp KP_N5 &kp KP_N5 &kt LEFT_ALT &kp KP_NUM>;
+            label = "ALT255";
+        };
+
+        steno_be: steno_be {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp B &kp E>;
+            label = "STENO_BE";
+        };
+
+        steno_sc: steno_sc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp C>;
+            label = "STENO_SC";
+        };
+
+        steno_ck: steno_ck {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C &kp K>;
+            label = "STENO_CK";
+        };
+
+        steno_ve: steno_ve {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp V &kp E>;
+            label = "STENO_VE";
+        };
+
+        lazy_vy: lazy_vy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp V &kp Y>;
+            label = "LAZY_VY";
+        };
+
+        lazy_iv: lazy_iv {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp V>;
+            label = "LAZY_IV";
+        };
+
+        steno_gh: steno_gh {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp H>;
+            label = "STENO_GH";
+        };
+
+        steno_rt: steno_rt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp R &kp T>;
+            label = "STENO_RT";
         };
     };
 
@@ -355,11 +416,12 @@
         compatible = "zmk,keymap";
 
         alpha {
+            label = "alpha";
             bindings = <
-&kp TAB    &mt QUESTION EXCL  &kp W           &kp M          &mt PRINTSCREEN P  &kp X                                &kp UP_ARROW             &kp Q            &kp F              &kp C               &kp U            &kp J            &mt F2 F5
-&sl 4      &mt LEFT_GUI R     &mt LEFT_ALT S  &mt LCTRL T    &mt LEFT_SHIFT H   &kp B                &kp LEFT_ARROW  &none         &kp RIGHT  &mt TILDE UNDER  &mt RIGHT_SHIFT N  &mt RCTRL A         &mt RIGHT_ALT I  &mt RIGHT_GUI O  &sl 4
-&kp ENTER  &mt AT Y           &key_repeat     &kp G          &kp D              &kp Z  &kp LC(N0)                    &kp DOWN                 &none            &kp L              &kp K               &key_repeat      &kp V            &kp ENTER
-                                              &mt F4 ESCAPE  &lt 2 SPACE        &sl 3                                                         &sl 3            &lt 1 E            &kp LA(LC(DELETE))
+&kp TAB    &kp B           &kp W               &kp M            &mt PRINTSCREEN P     &kp Z                       &sl 3         &kp Q                     &kp F                  &kp U               &kp Y                &kp J            &mt F2 F5
+&sl 4      &mt LEFT_GUI R  &sk_tap LEFT_ALT S  &sk_tap LCTRL T  &sk_tap LEFT_SHIFT H  &kp X                &none  &none  &none  &mt TILDE UNDER           &sk_tap RIGHT_SHIFT N  &sk_tap RCTRL A     &sk_tap RIGHT_ALT I  &mt RIGHT_GUI O  &sl 4
+&kp ENTER  &key_repeat     &kp C               &kp G            &kp D                 &none  &kp LC(N0)           &none         &mt QUESTION EXCLAMATION  &kp L                  &kp K               &kp V                &key_repeat      &kp ENTER
+                                               &mt F4 ESCAPE    &lt 2 SPACE           &sl 3                                     &sl 3                     &lt 1 E                &kp LA(LC(DELETE))
             >;
 
             sensor-bindings = <&inc_dec_kp LC(EQUAL) LC(MINUS)>;
@@ -368,10 +430,10 @@
         num+sym {
             label = "num+sym";
             bindings = <
-&kp DEL   &kp EQUAL    &kp N1  &kp N2      &kp N3     &kp DOLLAR                              &none           &kp GRAVE  &mt PIPE BSLH                   &kp HASH                            &mt DOUBLE_QUOTES SINGLE_QUOTE  &none                          &sk RCTRL
-&kp BSPC  &key_repeat  &kp N4  &kp N5      &kp N6     &kp N0                          &trans  &trans  &trans  &none      &mt CARET ASTRK                 &kp FSLH                            &kp PLUS                        &kp MINUS                      &mt COLON SEMICOLON
-&trans    &kp N0       &kp N7  &kp N8      &kp N9     &kp PERCENT       &kp C_MUTE            &none           &none      &mt LESS_THAN LEFT_PARENTHESIS  &mt GREATER_THAN RIGHT_PARENTHESIS  &mt LEFT_BRACE LEFT_BRACKET     &mt RIGHT_BRACE RIGHT_BRACKET  &none
-                               &sk LSHIFT  &kp SPACE  &mt COMMA PERIOD                                        &none      &none                           &none
+&kp DEL          &none        &kp N3  &kp N4  &kp N7           &kp DOLLAR                             &none         &kp GRAVE  &mt PIPE BSLH                   &kp HASH                            &mt DOUBLE_QUOTES SINGLE_QUOTE  &sk RSHIFT                     &sk RCTRL
+&kp BSPC         &key_repeat  &kp N0  &kp N1  &kp N2           &kp N9                          &none  &none  &none  &none      &mt CARET ASTRK                 &mt AT FSLH                         &mt AMPS PLUS                   &kp MINUS                      &mt COLON SEMICOLON
+&mt EQUAL ENTER  &none        &kp N5  &kp N6  &kp N8           &kp PERCENT       &kp C_MUTE           &none         &none      &mt LESS_THAN LEFT_PARENTHESIS  &mt GREATER_THAN RIGHT_PARENTHESIS  &mt LEFT_BRACE LEFT_BRACKET     &mt RIGHT_BRACE RIGHT_BRACKET  &none
+                                      &none   &mt LCTRL SPACE  &mt COMMA PERIOD                                     &none      &none                           &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -380,21 +442,22 @@
         nav+hot {
             label = "nav+hot";
             bindings = <
-&mt LC(DELETE) DELETE        &media     &mcro_na         &kp UP           &mcro_2025       &none                                       &trans         &none        &none           &mmv MOVE_UP    &none            &none      &none
-&mt LC(BACKSPACE) BACKSPACE  &kp LC(A)  &kp LEFT         &kp DOWN         &kp RIGHT        &actIve_directory 0 0                &none  &none   &none  &none        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp RCLK  &kp RGUI
-&kp LGUI                     &kp LC(F)  &mt LG(V) LC(V)  &mt LC(X) LC(C)  &mt LC(Y) LC(Z)  &none                  &bt BT_CLR           &trans         &none        &mt HOME PG_UP  &mt END PG_DN   &sk RSHFT        &sk RCTRL  &none
-                                                         &none            &none            &none                                                      &mcro_2Mclk  &mkp LCLK       &kp RG(RS(D))
+&mt LC(DELETE) DELETE        &media     &mcro_na         &kp UP           &mcro_2025       &none                       &none         &none        &none           &mmv MOVE_UP    &none            &none      &none
+&mt LC(BACKSPACE) BACKSPACE  &kp LC(A)  &kp LEFT         &kp DOWN         &kp RIGHT        &none                &none  &none  &none  &none        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp RCLK  &kp RGUI
+&act_dir 0 0                 &kp LC(F)  &mt LG(V) LC(V)  &mt LC(X) LC(C)  &mt LC(Y) LC(Z)  &none  &bt BT_CLR           &none         &none        &mt HOME PG_UP  &mt END PG_DN   &sk RSHFT        &sk RCTRL  &none
+                                                         &none            &none            &none                                     &mcro_2Mclk  &mkp LCLK       &kp RG(RS(D))
             >;
 
             sensor-bindings = <&bt_loop>;
         };
 
         steno {
+            label = "steno";
             bindings = <
-&trans      &none      &steno_sw  &steno_my  &none              &none                             &trans          &none  &steno_fl          &steno_ac  &steno_ou   &none      &none
-&none       &none      &steno_ys  &steno_ty  &none              &mt AMPS PERIOD           &trans  &trans  &trans  &none  &steno_fe          &steno_af  &steno_ing  &steno_ef  &none
-&sk LSHIFT  &steno_ry  &none      &steno_gm  &none              &none            &none            &trans          &none  &steno_lf          &steno_ck  &steno_ion  &steno_ov  &sk RSHIFT
-                                  &none      &kp LC(BACKSPACE)  &none                                             &none  &kp RC(BACKSPACE)  &none
+&trans      &lazy_rb  &none      &none      &none         &none                  &none         &none  &steno_fl     &steno_ua  &steno_ou  &none      &none
+&none       &lazy_br  &steno_sw  &steno_rt  &steno_gh     &none           &none  &none  &none  &none  &steno_fe     &steno_af  &steno_ef  &steno_ov  &none
+&sk LSHIFT  &lazy_be  &steno_sc  &steno_gm  &none         &none  &none           &none         &none  &steno_lf     &lazy_ke   &steno_ve  &lazy_eve  &sk RSHIFT
+                                 &none      &kp LC(BSPC)  &none                                &none  &kp RC(BSPC)  &none
             >;
 
             sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
@@ -403,24 +466,23 @@
         lazy {
             label = "lazy";
             bindings = <
-&none  &none     &none    &lazy_m   &none      &lazy_exe                   &trans          &none  &steno_fa  &lazy_ca    &lazy_c       &none     &none
-&none  &lazy_re  &lazy_s  &lazy_nt  &none      &none               &trans  &trans  &trans  &none  &none      &kp AT      &kp NUMBER_1  &kp N0    &none
-&none  &none     &none    &none     &lazy_d    &none      &to 5            &trans          &none  &lazy_ll   &lazy_like  &none         &lazy_ve  &none
-                          &trans    &lazy_cmm  &none                                       &none  &kp N3     &none
+&none  &alt255  &none    &lazy_m  &none      &none                                &to 5         &none  &none    &lazy_au   &lazy_vy  &none  &none
+&none  &lazy_r  &lazy_s  &lazy_t  &none      &lazy_exe                     &none  &none  &none  &none  &none    &lazy_fa   &lazy_iv  &none  &none
+&none  &none    &lazy_c  &none    &lazy_d    &none      &rgb_ug RGB_TOG           &none         &none  &lazy_L  &steno_ck  &lazy_v   &none  &none
+                         &trans   &lazy_cmm  &none                                              &none  &none    &none
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&rgb_type>;
         };
 
         Gaming {
+            label = "gaming";
             bindings = <
-&mt LGUI TAB  &kp E  &kp Q  &kp W     &kp R      &kp T                   &trans          &none  &none  &none  &none  &none  &none
-&kp H         &kp G  &kp A  &kp S     &kp D      &kp F           &trans  &trans  &trans  &none  &none  &none  &none  &none  &none
-&kp P         &kp M  &kp Z  &kp X     &kp C      &kp V  &to 0            &trans          &none  &none  &none  &none  &none  &none
-                            &kp LALT  &kp SPACE  &kp B                                   &none  &none  &none
+&mt LGUI TAB  &kp F  &kp Q  &kp W     &kp E  &kp T                      &to 0         &none  &none  &none  &none  &none  &none
+&kp LSHFT     &kp G  &kp A  &kp S     &kp D  &kp R               &none  &none  &none  &none  &none  &none  &none  &none  &none
+&kp P         &kp M  &kp Z  &kp X     &kp C  &kp V      &none           &none         &none  &none  &none  &none  &none  &none
+                            &kp LALT  &kp B  &kp SPACE                                &none  &none  &none
             >;
-
-            sensor-bindings = <&scroll_encoder>;
         };
     };
 };
