@@ -163,7 +163,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&lazy_br'
   - '&steno_sw'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&steno_rt'
   - '&steno_gh'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -213,7 +213,7 @@ layers:
   - '&lazy_r'
   - '&lazy_s'
   - '&lazy_t'
-  - '&lazy_be'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&lazy_exe'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
