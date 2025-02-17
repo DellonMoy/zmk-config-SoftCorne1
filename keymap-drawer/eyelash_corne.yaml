@@ -160,7 +160,7 @@ layers:
   - '&steno_ou'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&steno_be'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&lazy_br'
   - '&steno_sw'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -176,7 +176,7 @@ layers:
   - '&steno_ov'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&lazy_be'
   - '&steno_sc'
   - '&steno_gm'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
