@@ -379,6 +379,13 @@
             bindings = <&kp V &kp Y>;
             label = "LAZY_VY";
         };
+
+        lazy_iv: lazy_iv {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp V>;
+            label = "LAZY_IV";
+        };
     };
 
     combos {
@@ -446,7 +453,7 @@
             label = "lazy";
             bindings = <
 &none  &alt255  &none    &lazy_m  &none      &none                                &to 5         &none  &none    &lazy_au   &lazy_vy  &none  &none
-&none  &lazy_r  &lazy_s  &lazy_t  &lazy_be   &lazy_exe                     &none  &none  &none  &none  &none    &lazy_fa   &none     &none  &none
+&none  &lazy_r  &lazy_s  &lazy_t  &lazy_be   &lazy_exe                     &none  &none  &none  &none  &none    &lazy_fa   &lazy_iv  &none  &none
 &none  &none    &lazy_c  &none    &lazy_d    &none      &rgb_ug RGB_TOG           &none         &none  &lazy_L  &steno_ck  &lazy_v   &none  &none
                          &trans   &lazy_cmm  &none                                              &none  &none    &none
             >;
