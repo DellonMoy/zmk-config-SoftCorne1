@@ -27,12 +27,12 @@
 &mt {
     tapping-term-ms = <200>;
     flavor = "tap-preferred";
-    require-prior-idle-ms = <50>;
+    require-prior-idle-ms = <75>;
 };
 
 &lt {
     tapping-term-ms = <200>;
-    require-prior-idle-ms = <50>;
+    require-prior-idle-ms = <75>;
 };
 
 &caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE MINUS N1 N2 N3 N4 N5 N6 N7 N8 N9 N0>; };
@@ -386,6 +386,13 @@
             bindings = <&kp I &kp V>;
             label = "LAZY_IV";
         };
+
+        steno_gh: steno_gh {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp H>;
+            label = "STENO_GH";
+        };
     };
 
     combos {
@@ -441,7 +448,7 @@
             label = "steno";
             bindings = <
 &trans      &lazy_rb  &none      &none      &none         &none                  &none         &none  &steno_fl     &steno_ua  &steno_ou  &none      &none
-&steno_be   &lazy_br  &steno_sw  &none      &none         &none           &none  &none  &none  &none  &steno_fe     &steno_af  &steno_ef  &steno_ov  &none
+&steno_be   &lazy_br  &steno_sw  &none      &steno_gh     &none           &none  &none  &none  &none  &steno_fe     &steno_af  &steno_ef  &steno_ov  &none
 &sk LSHIFT  &none     &steno_sc  &steno_gm  &none         &none  &none           &none         &none  &steno_lf     &lazy_ke   &steno_ve  &lazy_eve  &sk RSHIFT
                                  &none      &kp LC(BSPC)  &none                                &none  &kp RC(BSPC)  &none
             >;
