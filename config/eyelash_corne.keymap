@@ -439,6 +439,16 @@
             key-positions = <13 14>;
             layers = <0>;
         };
+
+        cmbo_und {
+            bindings = <&mt TILDE UNDER>;
+            key-positions = <26 27>;
+        };
+
+        cmbo_exl {
+            bindings = <&mt QUESTION EXCLAMATION>;
+            key-positions = <25 26>;
+        };
     };
 
     keymap {
@@ -447,10 +457,10 @@
         alpha {
             label = "alpha";
             bindings = <
-&none      &kp B           &kp W           &kp M          &mt PRINTSCREEN P  &kp Z                       &sl 3         &kp Q                     &kp F              &kp U               &kp Y            &kp J            &mt F2 F5
-&sl 4      &mt LEFT_GUI R  &mt LEFT_ALT S  &mt LCTRL T    &mt LEFT_SHIFT H   &kp X                &none  &none  &none  &mt TILDE UNDER           &mt RIGHT_SHIFT N  &mt RCTRL A         &mt RIGHT_ALT I  &mt RIGHT_GUI O  &sl 4
-&kp ENTER  &key_repeat     &kp C           &kp G          &kp D              &none  &kp LC(N0)           &none         &mt QUESTION EXCLAMATION  &kp L              &kp K               &kp V            &key_repeat      &kp ENTER
-                                           &mt F4 ESCAPE  &lt 2 SPACE        &sl 3                                     &sl 3                     &lt 1 E            &kp LA(LC(DELETE))
+&none      &kp B           &kp W           &kp M          &mt PRINTSCREEN P  &kp Z                       &sl 3         &kp Q  &kp F              &kp U               &kp Y            &kp J            &mt F2 F5
+&sl 4      &mt LEFT_GUI R  &mt LEFT_ALT S  &mt LCTRL T    &mt LEFT_SHIFT H   &kp X                &none  &none  &none  &none  &mt RIGHT_SHIFT N  &mt RCTRL A         &mt RIGHT_ALT I  &mt RIGHT_GUI O  &sl 4
+&kp ENTER  &key_repeat     &kp C           &kp G          &kp D              &none  &kp LC(N0)           &none         &none  &kp L              &kp K               &kp V            &key_repeat      &kp ENTER
+                                           &mt F4 ESCAPE  &lt 2 SPACE        &sl 3                                     &sl 3  &lt 1 E            &kp LA(LC(DELETE))
             >;
 
             sensor-bindings = <&inc_dec_kp LC(EQUAL) LC(MINUS)>;
