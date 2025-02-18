@@ -60,8 +60,8 @@ layers:
   - {t: \, h: '|', s: '|'}
   - '#'
   - {t: '''', h: '"', s: '"'}
-  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
-  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&key_repeat'
   - {t: '0', s: )}
@@ -91,7 +91,7 @@ layers:
   - {t: '[', h: '{', s: '{'}
   - {t: ']', h: '}', s: '}'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-control$$'}
   - {t: ., h: ','}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -112,7 +112,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Ctl+A
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
@@ -127,7 +127,7 @@ layers:
   - $$mdi:mouse-right-click-outline$$
   - RGUI
   - {t: '&mcro_ad', h: '&mcro_sad'}
-  - Ctl+F
+  - {t: Ctl+A, h: Ctl+F}
   - {t: Ctl+V, h: V}
   - {t: Ctl+C, h: Ctl+X}
   - {t: Ctl+Z, h: Ctl+Y}
@@ -147,7 +147,7 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - Gui+Sft+D
   steno:
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&lazy_rb'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -197,7 +197,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   lazy:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&alt255'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&lazy_m'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -238,9 +238,9 @@ layers:
   - '&lazy_v'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '&lazy_cmm'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&lazy_cmm'
+  - '&lazy_dot'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
