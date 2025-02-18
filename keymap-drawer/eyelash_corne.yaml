@@ -303,3 +303,4 @@ combos:
   k: Ctl+$$mdi:backspace-reverse-outline$$
 - p: [13, 14]
   k: $$mdi:keyboard-tab$$
+  l: [alpha]
