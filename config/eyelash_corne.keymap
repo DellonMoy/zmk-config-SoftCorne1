@@ -424,6 +424,7 @@
         cmbo_tab {
             bindings = <&kp TAB>;
             key-positions = <13 14>;
+            layers = <0>;
         };
     };
 
