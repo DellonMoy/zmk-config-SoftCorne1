@@ -22,7 +22,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: _, h: '~'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: I, h: '$$mdi:apple-keyboard-option$$'}
@@ -36,7 +36,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: Ctl+0, s: Ctl+)}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '!', h: '?'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - L
   - K
   - V
@@ -304,3 +304,7 @@ combos:
 - p: [13, 14]
   k: $$mdi:keyboard-tab$$
   l: [alpha]
+- p: [26, 27]
+  k: {t: _, h: '~'}
+- p: [25, 26]
+  k: {t: '!', h: '?'}
