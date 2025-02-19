@@ -78,7 +78,7 @@ layers:
   - {t: '-', s: _}
   - {t: ;, h: ':', s: ':'}
   - {t: '$$mdi:keyboard-return$$', h: '='}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - LGUI
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
   - {t: '8', s: '*'}
