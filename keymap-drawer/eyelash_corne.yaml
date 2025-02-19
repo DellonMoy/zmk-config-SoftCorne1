@@ -5,9 +5,9 @@ layers:
   - W
   - M
   - {t: P, h: PRINTSCREEN}
-  - Z
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: steno, h: '$$mdi:gesture-tap-hold$$'}
-  - Q
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - F
   - U
   - Y
@@ -18,11 +18,11 @@ layers:
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: T, h: '$$mdi:apple-keyboard-control$$'}
   - {t: H, h: '$$mdi:apple-keyboard-shift$$'}
-  - X
+  - {t: X, h: Z}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Q
   - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: I, h: '$$mdi:apple-keyboard-option$$'}
@@ -57,10 +57,10 @@ layers:
   - $
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '`', s: '~'}
-  - {t: \, h: '|', s: '|'}
+  - {t: \, s: '|'}
   - '#'
   - {t: '''', h: '"', s: '"'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '|'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&key_repeat'
@@ -71,10 +71,10 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '*', h: ^}
-  - {t: /, h: '@', s: '?'}
-  - {t: +, h: '&'}
+  - ^
+  - '*'
+  - {t: /, s: '?'}
+  - +
   - {t: '-', s: _}
   - {t: ;, h: ':', s: ':'}
   - {t: '$$mdi:keyboard-return$$', h: '='}
@@ -308,3 +308,7 @@ combos:
   k: {t: _, h: '~'}
 - p: [25, 26]
   k: {t: '!', h: '?'}
+- p: [11, 10]
+  k: '@'
+- p: [39, 40]
+  k: '&'
