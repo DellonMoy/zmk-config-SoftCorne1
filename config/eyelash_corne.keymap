@@ -449,6 +449,16 @@
             bindings = <&mt QUESTION EXCLAMATION>;
             key-positions = <25 26>;
         };
+
+        cmbo_at {
+            bindings = <&kp AT>;
+            key-positions = <11 10>;
+        };
+
+        cmbo_amp {
+            bindings = <&kp AMPS>;
+            key-positions = <39 40>;
+        };
     };
 
     keymap {
@@ -457,10 +467,10 @@
         alpha {
             label = "alpha";
             bindings = <
-&none      &kp B           &kp W           &kp M          &mt PRINTSCREEN P  &kp Z                       &sl 3         &kp Q  &kp F              &kp U               &kp Y            &kp J            &mt F2 F5
-&sl 4      &mt LEFT_GUI R  &mt LEFT_ALT S  &mt LCTRL T    &mt LEFT_SHIFT H   &kp X                &none  &none  &none  &none  &mt RIGHT_SHIFT N  &mt RCTRL A         &mt RIGHT_ALT I  &mt RIGHT_GUI O  &sl 4
-&kp ENTER  &key_repeat     &kp C           &kp G          &kp D              &none  &kp LC(N0)           &none         &none  &kp L              &kp K               &kp V            &key_repeat      &kp ENTER
-                                           &mt F4 ESCAPE  &lt 2 SPACE        &sl 3                                     &sl 3  &lt 1 E            &kp LA(LC(DELETE))
+&none      &kp B           &kp W           &kp M          &mt PRINTSCREEN P  &none                         &sl 3         &none  &kp F              &kp U               &kp Y            &kp J            &mt F2 F5
+&sl 4      &mt LEFT_GUI R  &mt LEFT_ALT S  &mt LCTRL T    &mt LEFT_SHIFT H   &mt Z X                &none  &none  &none  &kp Q  &mt RIGHT_SHIFT N  &mt RCTRL A         &mt RIGHT_ALT I  &mt RIGHT_GUI O  &sl 4
+&kp ENTER  &key_repeat     &kp C           &kp G          &kp D              &none    &kp LC(N0)           &none         &none  &kp L              &kp K               &kp V            &key_repeat      &kp ENTER
+                                           &mt F4 ESCAPE  &lt 2 SPACE        &sl 3                                       &sl 3  &lt 1 E            &kp LA(LC(DELETE))
             >;
 
             sensor-bindings = <&inc_dec_kp LC(EQUAL) LC(MINUS)>;
@@ -469,8 +479,8 @@
         num+sym {
             label = "num+sym";
             bindings = <
-&none            &none        &kp N3  &kp N4     &kp N7           &kp DOLLAR                             &none         &kp GRAVE  &mt PIPE BSLH                   &kp HASH                            &mt DOUBLE_QUOTES SINGLE_QUOTE  &none                          &none
-&none            &key_repeat  &kp N0  &kp N1     &kp N2           &kp N9                          &none  &none  &none  &none      &mt CARET ASTRK                 &mt AT FSLH                         &mt AMPS PLUS                   &kp MINUS                      &mt COLON SEMICOLON
+&none            &none        &kp N3  &kp N4     &kp N7           &kp DOLLAR                             &none         &kp GRAVE  &kp BSLH                        &kp HASH                            &mt DOUBLE_QUOTES SINGLE_QUOTE  &kp PIPE                       &none
+&none            &key_repeat  &kp N0  &kp N1     &kp N2           &kp N9                          &none  &none  &none  &kp CARET  &kp ASTRK                       &kp FSLH                            &kp PLUS                        &kp MINUS                      &mt COLON SEMICOLON
 &mt EQUAL ENTER  &none        &kp N5  &kp N6     &kp N8           &kp PERCENT       &kp C_MUTE           &none         &none      &mt LESS_THAN LEFT_PARENTHESIS  &mt GREATER_THAN RIGHT_PARENTHESIS  &mt LEFT_BRACE LEFT_BRACKET     &mt RIGHT_BRACE RIGHT_BRACKET  &none
                                       &sk LSHFT  &mt LCTRL SPACE  &mt COMMA PERIOD                                     &none      &none                           &none
             >;
