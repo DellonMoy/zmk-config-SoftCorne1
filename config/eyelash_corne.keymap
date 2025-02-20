@@ -458,12 +458,12 @@
         };
 
         cmbo_at {
-            bindings = <&kp AT>;
+            bindings = <&kp AMPS>;
             key-positions = <11 10>;
         };
 
         cmbo_amp {
-            bindings = <&kp AMPS>;
+            bindings = <&kp AT>;
             key-positions = <39 40>;
         };
     };
