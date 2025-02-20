@@ -510,10 +510,10 @@
         steno {
             label = "steno";
             bindings = <
-&none       &lazy_rb  &none      &none      &none         &none                  &none         &steno_eq  &steno_fl     &steno_ua  &steno_ou  &steno_jo  &none
-&steno_be   &lazy_br  &steno_sw  &steno_rt  &steno_gh     &none           &none  &none  &none  &none      &steno_fe     &steno_af  &steno_ef  &steno_ov  &none
-&sk LSHIFT  &none     &steno_sc  &steno_gm  &none         &none  &none           &none         &none      &steno_lf     &lazy_ke   &steno_ve  &lazy_eve  &sk RSHIFT
-                                 &none      &kp LC(BSPC)  &none                                &none      &kp RC(BSPC)  &none
+&none       &lazy_rb   &none      &none      &none         &none                  &none         &steno_eq  &steno_fl     &steno_ua  &steno_ou  &steno_jo  &none
+&none       &lazy_br   &steno_sw  &steno_rt  &steno_gh     &none           &none  &none  &none  &none      &steno_fe     &steno_af  &steno_ef  &steno_ov  &none
+&sk LSHIFT  &steno_be  &steno_sc  &steno_gm  &none         &none  &none           &none         &none      &steno_lf     &lazy_ke   &steno_ve  &lazy_eve  &sk RSHIFT
+                                  &none      &kp LC(BSPC)  &none                                &none      &kp RC(BSPC)  &none
             >;
 
             sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
