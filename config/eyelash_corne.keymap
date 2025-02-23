@@ -434,6 +434,7 @@
         cmbo_bs {
             bindings = <&kp LC(BSPC)>;
             key-positions = <14 15>;
+            require-prior-idle-ms = <50>;
         };
 
         cmbo_del {
@@ -534,10 +535,10 @@
         Gaming {
             label = "gaming";
             bindings = <
-&mt LGUI TAB  &kp F  &kp Q  &kp W     &kp E  &kp T                      &to 0         &none  &none  &none  &none  &none  &none
-&kp LSHFT     &kp G  &kp A  &kp S     &kp D  &kp R               &none  &none  &none  &none  &none  &none  &none  &none  &none
-&kp P         &kp M  &kp Z  &kp X     &kp C  &kp V      &none           &none         &none  &none  &none  &none  &none  &none
-                            &kp LALT  &kp B  &kp SPACE                                &none  &none  &none
+&mt LGUI TAB  &kp F  &kp Q  &kp W     &kp E      &kp T                  &to 0         &none  &none  &none  &none  &none  &none
+&kp LSHFT     &kp G  &kp A  &kp S     &kp D      &kp R           &none  &none  &none  &none  &none  &none  &none  &none  &none
+&kp P         &kp M  &kp Z  &kp X     &kp C      &kp V  &none           &none         &none  &none  &none  &none  &none  &none
+                            &kp LALT  &kp SPACE  &kp B                                &none  &none  &none
             >;
         };
     };
