@@ -487,7 +487,7 @@
         num+sym {
             label = "num+sym";
             bindings = <
-&none            &none        &kp N3  &kp N4     &kp N7           &kp DOLLAR                             &none         &kp GRAVE  &kp BSLH                        &kp HASH                            &mt DOUBLE_QUOTES SINGLE_QUOTE  &kp PIPE                       &none
+&none            &none        &kp N3  &kp N4     &kp N7           &kp DOLLAR                             &none         &none      &kp BSLH                        &kp HASH                            &mt DOUBLE_QUOTES SINGLE_QUOTE  &kp PIPE                       &kp GRAVE
 &none            &key_repeat  &kp N0  &kp N1     &kp N2           &kp N9                          &none  &none  &none  &kp CARET  &kp ASTRK                       &kp FSLH                            &kp PLUS                        &kp MINUS                      &mt COLON SEMICOLON
 &mt EQUAL ENTER  &kp LGUI     &kp N5  &kp N6     &kp N8           &kp PERCENT       &kp C_MUTE           &none         &none      &mt LESS_THAN LEFT_PARENTHESIS  &mt GREATER_THAN RIGHT_PARENTHESIS  &mt LEFT_BRACE LEFT_BRACKET     &mt RIGHT_BRACE RIGHT_BRACKET  &none
                                       &sk LSHFT  &mt LCTRL SPACE  &mt COMMA PERIOD                                     &none      &none                           &none
