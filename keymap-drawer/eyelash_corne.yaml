@@ -6,7 +6,7 @@ layers:
   - M
   - {t: P, h: PRINTSCREEN}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: steno, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - F
   - U
@@ -28,7 +28,7 @@ layers:
   - {t: I, h: '$$mdi:apple-keyboard-option$$'}
   - {t: O, h: RIGHT GUI}
   - {t: lazy, h: '$$mdi:gesture-tap-hold$$'}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&key_repeat'
   - C
   - G
@@ -41,7 +41,7 @@ layers:
   - K
   - V
   - '&key_repeat'
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:keyboard-esc$$', h: F4}
   - {t: '$$mdi:keyboard-space$$', h: nav+hot}
   - {t: steno, h: '$$mdi:gesture-tap-hold$$'}
@@ -120,7 +120,7 @@ layers:
   - $$mdi:skip-previous$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:skip-next$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
@@ -134,7 +134,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:bluetooth-off$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: PG UP, h: HOME}
   - {t: PG DN, h: END}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
@@ -153,7 +153,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&steno_eq'
   - '&steno_fl'
   - '&steno_ua'
@@ -191,7 +191,7 @@ layers:
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: 'Ctl+$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
   - {t: 'Ctl+$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -242,7 +242,7 @@ layers:
   - '&lazy_cmm'
   - '&lazy_dot'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Ctl+$$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   gaming:
   - {t: '$$mdi:keyboard-tab$$', h: LGUI}
@@ -297,10 +297,6 @@ combos:
 - p: [44, 45]
   k: $$mdi:alpha-w-box$$
   l: [alpha]
-- p: [14, 15]
-  k: {t: 'Ctl+$$mdi:backspace$$', type: backspace}
-- p: [1, 2]
-  k: Ctl+$$mdi:backspace-reverse-outline$$
 - p: [13, 14]
   k: $$mdi:keyboard-tab$$
   l: [alpha]
