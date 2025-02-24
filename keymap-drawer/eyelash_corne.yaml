@@ -56,12 +56,12 @@ layers:
   - {t: '7', s: '&'}
   - $
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '`', s: '~'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: \, s: '|'}
   - '#'
   - {t: '''', h: '"', s: '"'}
   - '|'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '`', s: '~'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&key_repeat'
   - {t: '0', s: )}
