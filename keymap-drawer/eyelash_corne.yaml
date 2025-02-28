@@ -5,7 +5,7 @@ layers:
   - W
   - M
   - {t: P, h: PRINTSCREEN}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Q
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - F
@@ -18,11 +18,11 @@ layers:
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: T, h: '$$mdi:apple-keyboard-control$$'}
   - {t: H, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: X, h: Z}
+  - X
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Q
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: I, h: '$$mdi:apple-keyboard-option$$'}
@@ -33,7 +33,7 @@ layers:
   - C
   - G
   - D
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Z
   - {t: Ctl+0, s: Ctl+)}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
