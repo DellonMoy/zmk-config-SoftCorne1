@@ -4,8 +4,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 /*
@@ -471,9 +469,9 @@
         alpha {
             label = "alpha";
             bindings = <
-&none  &kp B           &kp W           &kp M          &mt PRINTSCREEN P  &none                       &kp RET         &none  &kp F              &kp U               &kp Y            &kp J            &mt F2 F5
+&none  &kp B           &kp W           &kp M          &mt PRINTSCREEN P  &none                       &kp RET         &none  &kp F              &kp U               &kp Y            &kp J            &none
 &sl 4  &mt LEFT_GUI R  &mt LEFT_ALT S  &mt LCTRL T    &mt LEFT_SHIFT H   &kp X                &none  &none    &none  &kp Q  &mt RIGHT_SHIFT N  &mt RCTRL A         &mt RIGHT_ALT I  &mt RIGHT_GUI O  &sl 4
-&none  &key_repeat     &kp C           &kp G          &kp D              &kp Z  &kp LC(N0)           &none           &none  &kp L              &kp K               &kp V            &key_repeat      &none
+&none  &key_repeat     &kp C           &kp G          &kp D              &none  &kp LC(N0)           &none           &none  &kp L              &kp K               &kp V            &key_repeat      &none
                                        &mt F4 ESCAPE  &lt 2 SPACE        &sl 3                                       &sl 3  &lt 1 E            &kp LA(LC(DELETE))
             >;
 
@@ -520,7 +518,7 @@
             label = "lazy";
             bindings = <
 &none      &none    &none    &lazy_m  &none      &none                                &to 5         &none  &none        &lazy_au   &lazy_vy  &none  &none
-&none      &lazy_r  &lazy_s  &lazy_t  &lazy_ch   &lazy_exe                     &none  &none  &none  &none  &none        &lazy_fa   &lazy_vi  &none  &none
+&none      &lazy_r  &lazy_s  &lazy_t  &lazy_ch   &lazy_exe                     &none  &none  &none  &kp Z  &none        &lazy_fa   &lazy_vi  &none  &none
 &sk LSHFT  &none    &lazy_c  &none    &lazy_d    &none      &rgb_ug RGB_TOG           &none         &none  &lazy_L      &steno_ck  &lazy_v   &none  &sk RSHFT
                              &none    &lazy_cmm  &lazy_dot                                          &none  &kp RC(DEL)  &none
             >;
