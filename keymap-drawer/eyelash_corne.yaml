@@ -12,7 +12,7 @@ layers:
   - U
   - Y
   - J
-  - {t: F5, h: F2}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: lazy, h: '$$mdi:gesture-tap-hold$$'}
   - {t: R, h: '$$mdi:apple-keyboard-command$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
@@ -33,7 +33,7 @@ layers:
   - C
   - G
   - D
-  - Z
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: Ctl+0, s: Ctl+)}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -218,7 +218,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Z
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&lazy_fa'
   - '&lazy_vi'
