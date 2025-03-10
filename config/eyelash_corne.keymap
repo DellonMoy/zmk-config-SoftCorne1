@@ -434,32 +434,38 @@
             bindings = <&caps_word>;
             key-positions = <44 45>;
             layers = <0>;
+            timeout-ms = <30>;
         };
 
         cmbo_tab {
             bindings = <&kp TAB>;
             key-positions = <13 14>;
             layers = <0>;
+            timeout-ms = <30>;
         };
 
         cmbo_und {
             bindings = <&mt TILDE UNDER>;
             key-positions = <26 27>;
+            timeout-ms = <30>;
         };
 
         cmbo_exl {
             bindings = <&mt QUESTION EXCLAMATION>;
             key-positions = <25 26>;
+            timeout-ms = <30>;
         };
 
         cmbo_at {
             bindings = <&kp AMPS>;
             key-positions = <11 10>;
+            timeout-ms = <30>;
         };
 
         cmbo_amp {
             bindings = <&kp AT>;
             key-positions = <39 40>;
+            timeout-ms = <30>;
         };
     };
 
