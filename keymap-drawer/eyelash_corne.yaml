@@ -308,3 +308,7 @@ combos:
   k: '&'
 - p: [39, 40]
   k: '@'
+- p: [17, 18]
+  k: {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
+- p: [22, 23]
+  k: {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
